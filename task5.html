@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>task5</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100%;
+            max-width: 640px;
+            min-width:320px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .header{
+            width: 100%;
+            background-color: blue;
+            text-align: center;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        .header img{
+            position: absolute;
+            left: 0;
+            top: 3px;
+        }
+        .header span{
+            color: white;
+        }
+        .introduction{
+            width: 100%;
+            background: url("picture/task5-1-backgound.png");
+            font-size: 1.2em;
+            padding-top: 8%;
+            padding-bottom: 8%;
+            height: 4em;
+        }
+        .head-portrait{
+            float: left;
+            padding: 10% 0;
+            width: 20%;
+            margin: 0 3%;
+            border-radius: 50%;
+            background: url("picture/task5-1-youxiang.png");
+            background-size: cover;
+
+        }
+        .name-address{
+            float: right;
+
+            width:70%;
+            padding-top: 8%;
+            color: white;
+        }
+        .name-address span{
+            font-size: 1.5rem;
+            padding-left: 6%;
+            padding-right: 2%;
+
+        }
+        .list-header{
+            clear: both;
+            font-size: 1rem;
+            border-style: none;
+            padding: 1rem;
+            border-bottom: 1px solid gray;
+
+        }
+        .list-header span{
+            border: 1px #00c048;
+            border-left: 2px solid gray ;
+            padding-left: 2rem;
+
+        }
+
+        li{
+            list-style: none;
+            border-bottom: 1px solid gray;
+            font-size: 1rem;
+            padding: 0.8em;
+        }
+
+        .liushu-zhujia{
+            border-right:1px solid gray ;
+            padding-right: 0.8em;
+            margin-right: 0.8em;
+            color: #888888;
+        }
+        .buguanfan{
+            color: #222222;
+        }
+        .wages{
+            color: red;
+        }
+        .self-introduction{
+            display: inline-block;
+            width: 65%;
+            vertical-align: middle;
+        }
+        .footer{
+            padding-top: 4em;
+            padding-bottom: 4em;
+        }
+        .message{
+            box-sizing: border-box;
+            width: 40%;
+            padding: 3% 3%;
+            margin-left: 3%;
+            margin-right: 3%;
+            background-color: white;
+            border:1px solid #2d94fb;
+            color: #2d94fb;
+            border-radius: 10px;
+            font-size: 1.5em;
+        }
+        .contact{
+            box-sizing: border-box;
+            width: 40%;
+            padding: 3% 3%;
+            margin-left: 3%;
+            margin-right: 3%;
+            float: right;
+            border:1px solid #2d94fb;
+            border-radius: 10px;
+            background-color:#2d94fb;
+            color: white;
+            font-size: 1rem;
+
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <img src="picture/task5-1-backspace.png">
+        <span>个人主页</span>
+    </div>
+    <div class="main">
+        <div class="introduction">
+            <div class="head-portrait">
+<!--
+                <img src="picture/task5-1-youxiang.png">
+-->
+            </div>
+            <div class="name-address">
+                <p><span>高素雅</span>51岁</p>
+                <p><img src="picture/task5-location.png">北京.通州.果园</p>
+            </div>
+        </div>
+        <div class="list-header">
+            <span>专业技能</span>
+        </div>
+        <div class="list">
+            <ul>
+                <li ><span class="liushu-zhujia buguanfan"><img src="picture/task5-star.png">住家</span><span class="buguanfan"><img src="picture/task5-star.png">不留宿</span></li>
+                <li><span class="liushu-zhujia">从业年限</span><span >0～3</span></li>
+                <li><span class="liushu-zhujia">工作时间</span><span >全天</span></li>
+                <li><span class="liushu-zhujia">服务价格</span><span class="wages">25/小时</span></li>
+                <li><span class="liushu-zhujia">自我介绍</span><p class="self-introduction">可以洗衣、做饭、照顾老人。在护工方面有5年的经验，经验丰富。</p></li>
+            </ul>
+        </div>
+    </div>
+<div class="footer">
+    <button class="message" type="submit">留言</button>
+    <button class="contact" type="submit">电话联系</button>
+</div>
+</div>
+</body>
+</html>
