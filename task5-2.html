@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>task5-2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            max-width: 100%;
+        }
+        .wrapper{
+            width: 100%;
+            max-width: 640px;
+            min-width:320px;
+            margin: 0 auto;
+            position: relative;
+        }
+        ul{
+            list-style: none;
+        }
+        .header{
+            box-sizing: border-box;
+            width: 100%;
+            background: #2d94fb;
+            text-align:center;
+            padding: 0.5rem;
+        }
+        .header img{
+            position: absolute;
+            right: 5.5%;
+            top: 0.5%;
+        }
+        .header button{
+            border-radius: 5px;
+            border: 1px solid #5fc0ce;
+            padding: 0.3em;
+        }
+
+        .employer{
+            background: white;
+
+            color: #2d94fb;
+            font-size: 150%;
+        }
+        .nurse{
+            background: #67bffb;
+            color: white;
+            font-size: 150%;
+        }
+        .subnav{
+            width: 100%;
+            display: -moz-box;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: box;
+            text-align: center;
+            border: none;
+            border-bottom: 1px solid #999999;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+        .drop-place{
+            -moz-box-flex:1;
+            -webkit-box-flex:1;
+            -ms-flex:1;
+            -webkit-flex:1;
+            border: none;
+            border-right:1px solid #999999 ;
+        }
+        .drop-borard{
+            -moz-box-flex:1;
+            -webkit-box-flex:1;
+            -ms-flex:1;
+            -webkit-flex:1;
+            border-right:1px solid #999999 ;
+
+        }
+        .drop-patient{
+            -moz-box-flex:1;
+            -webkit-box-flex:1;
+            -ms-flex:1;
+            -webkit-flex:1;
+            border: none;
+        }
+        .subnav img{
+            margin-right: 0.3em;
+            float: right;
+            margin-top: 1em;
+        }
+        .subnav span{
+
+            line-height: 3em;
+        }
+        .list{
+            font-size: 1em;
+            position: relative;
+        }
+        .list li{
+            border: none;
+            border-bottom: 1px solid #999999;
+            overflow: hidden;
+            padding-left: 4%;
+        }
+        .see{
+            float: right;
+        }
+        .work-time{
+            color: #888888;
+
+        }
+        .price{
+            overflow: hidden;
+        }
+        .price img{
+            position: relative;
+            top: 1%;
+            right: 5%;
+            z-index: 2;
+        }
+        .price span{
+            display: inline-block;
+            vertical-align: -0.4em;
+        }
+        .price-time{
+            width: 60%;
+        }
+        .price-red{
+            color: red;
+            position: relative;
+            left: 10%;
+        }
+        .people-place{
+
+        }
+        .people-place span{
+            display: inline-block;
+            vertical-align: top;
+        }
+        .footer{
+            position: fixed;
+            bottom: 1px;
+            width: 100%;
+            max-width: 640px;
+            background-color: #ffffff;
+            text-align: center;
+            display: -moz-box;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: box;;
+            border-top:1px solid #888888 ;
+        }
+        .footer-1 img{
+            margin-bottom:0.5em ;
+            margin-top: 1em;
+        }
+        .footer-3 img{
+            margin-bottom: 0.5em;
+            margin-top: 1em;
+        }
+        .footer-1 span{
+            margin-right: 0.3em;
+            color: #2d94fb;
+        }
+        .footer-3 span{
+            margin-left: 0.5em;
+            color: #888888;
+        }
+        .footer-1{
+            -moz-box-flex:1;
+            -webkit-box-flex:1;
+            -ms-flex:1;
+            -webkit-flex:1;
+            text-align: right;
+        }
+        .footer-2{
+            -moz-box-flex:1;
+            -webkit-box-flex:1;
+            -ms-flex:1;
+            -webkit-flex:1;
+        }
+        .footer-3{
+            -moz-box-flex:1;
+            -webkit-box-flex:1;
+            -ms-flex:1;
+            -webkit-flex:1;
+            text-align: left;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <div class="btn">
+            <button class="employer" type="button">找雇主</button><button class="nurse" type="button">找护工</button>
+        </div>
+        <img src="picture/task5-2-didian-icon.png">
+    </div>
+    <div class="main">
+        <div class="subnav">
+            <div class="drop-place">
+                <span>所在地</span>
+                <img src="picture/task5-2-drop-icon-2.png">
+            </div>
+            <div class="drop-borard">
+                <span>食宿</span>
+                <img src="picture/task5-2-drop-icon-2.png">
+            </div>
+            <div class="drop-patient">
+                <span>病人情况</span><img src="picture/task5-2-drop-icon-2.png">
+            </div>
+        </div>
+        <div class="list">
+            <ul>
+                <li>
+                    <div class="work-time">
+                            <img src="picture/task5-2-day-icon.png">
+                            <span>服务日期</span>
+                    </div>
+                    <div class="price">
+                            <span class="price-time">2015-7-5至2015-7-12</span><span class="price-red">25/小时</span>
+                            <img class="see" src="picture/task5-2-forward.png">
+                    </div>
+                    <div class="people-place">
+                            <img src="picture/task5-2-didian-small-icon.png">
+                            <span>北京.通州.果园</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="work-time">
+                        <img src="picture/task5-2-day-icon.png">
+                        <span>服务日期</span>
+                    </div>
+                    <div class="price">
+                        <span class="price-time">2015-7-5至2015-7-12</span><span class="price-red">25/小时</span>
+                        <img class="see" src="picture/task5-2-forward.png">
+                    </div>
+                    <div class="people-place">
+                        <img src="picture/task5-2-didian-small-icon.png">
+                        <span>北京.通州.果园</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="work-time">
+                        <img src="picture/task5-2-day-icon.png">
+                        <span>服务日期</span>
+                    </div>
+                    <div class="price">
+                        <span class="price-time">2015-7-5至2015-7-12</span><span class="price-red">25/小时</span>
+                        <img class="see" src="picture/task5-2-forward.png">
+                    </div>
+                    <div class="people-place">
+                        <img src="picture/task5-2-didian-small-icon.png">
+                        <span>北京.通州.果园</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="work-time">
+                        <img src="picture/task5-2-day-icon.png">
+                        <span>服务日期</span>
+                    </div>
+                    <div class="price">
+                        <span class="price-time">2015-7-5至2015-7-12</span><span class="price-red">25/小时</span>
+                        <img class="see" src="picture/task5-2-forward.png">
+                    </div>
+                    <div class="people-place">
+                        <img src="picture/task5-2-didian-small-icon.png">
+                        <span>北京.通州.果园</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="work-time">
+                        <img src="picture/task5-2-day-icon.png">
+                        <span>服务日期</span>
+                    </div>
+                    <div class="price">
+                        <span class="price-time">2015-7-5至2015-7-12</span><span class="price-red">25/小时</span>
+                        <img class="see" src="picture/task5-2-forward.png">
+                    </div>
+                    <div class="people-place">
+                        <img src="picture/task5-2-didian-small-icon.png">
+                        <span>北京.通州.果园</span>
+                    </div>
+                </li>
+
+
+            </ul>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="footer-1">
+            <img src="picture/task5-2-footer-home-icon.png"><br/>
+            <span>首页</span>
+        </div>
+        <div class="footer-2">
+
+            <img src="picture/task5-2-write.png">
+        </div>
+        <div class="footer-3">
+            <img src="picture/task5-2-footer-mine-icon.png"><br/>
+            <span>我的</span>
+
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
