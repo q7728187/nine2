@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 40%;
+    }
+}
+body{
+    font:normal 100% Arial,sans-serif;font-size:14px; font-size:1.4rem;
+}
+.img{
+    max-width: 100%;
+}
+.wrapper{
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+}
+.header{
+    overflow: hidden;
+    font-size: 3.4rem;
+    color: #fff;
+    background-color: #2d94fb;
+    border-bottom: 1px solid #74d4eb;
+    text-align: center;
+    padding: 1rem;
+}
+.header-left{
+    float: left;
+}
+.header-right{
+    float: right;
+}
+.main{
+    background-color: #2d94fb;
+}
+.winner {
+    text-align: center;
+    font-size: 3.3rem;
+    color: #ffc865;
+}
+.winning-probability{
+    text-align: left;
+    padding-left:10%;
+    padding-right: 10%;
+    padding-top:5%;
+    padding-bottom: 5%;
+}
+.detailed-results{
+    font-size: 2.6rem;
+    text-align: left;
+
+}
+.detailed-results p{
+    padding: 2.5% 10%;
+    line-height: 1px;
+}
+ul{
+    list-style: none;
+}
+li{
+    background-color: white;
+    position: relative;
+    padding: 2% 10%;
+    border-bottom: 2px solid #ddd;
+}
+li h2{
+    padding: 2% 0;
+    font-size: 3rem;
+    line-height: 1;
+    color: #515151;
+}
+li span{
+    position: absolute;
+    top: 10%;
+    right: 21%;
+    font-size: 2rem;
+    color: #c7c7c7;
+}
+li p{
+    padding: 1% 0;
+    font-size: 2.6rem;
+    line-height: 1.5;
+    color: #a6a6a6;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 640px;
+    background-color: #99dff0;
+    opacity: 0.9;
+}
+.footer-left{
+    float: left;
+    width: 45%;
+    margin: 2.5%;
+    padding: 2%;
+    font-size: 3.5rem;
+    text-align: center;
+    color: #f66f6f;
+    border-radius: 3px;
+}
+.footer-right{
+    float: right;
+    width: 45%;
+    margin: 2.5%;
+    padding: 2%;
+    font-size: 3.5rem;
+    text-align: center;
+    color: #Fbb435;
+    border-radius: 3px;
+}
