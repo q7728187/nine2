@@ -1,0 +1,201 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 微软雅黑, serif;
+    font-weight: normal;
+}
+ul{
+    list-style: none;
+}
+body{
+    /*
+    max-width: 1200px;
+    */
+}
+.header {
+    width: 100%;
+    margin:0 auto;
+}
+.header-top {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 18.75%;
+}
+.header-top span {
+    font-size: 1.4rem;
+    line-height: 4rem;
+    color:#1db176;
+}
+.icon-header {
+    float: right;
+
+}
+.icon-header div {
+    float: right;
+    padding: 12px 5px;
+}
+.icon-header1-weixin {
+    width: 25px;
+    height: 25px;
+    margin-right: 12px;
+    background-color: #2d94fb;
+}
+.icon-header1-qq {
+    width: 25px;
+    height: 24px;
+    margin-right: 12px;
+}
+.icon-header1-weibo {
+    width: 25px;
+    height: 24px;
+    margin-right: 12px;
+}
+.logo{
+    float: left;
+    margin-left: 18.75%;
+    padding-top: 20px;
+ }
+.header-footer {
+    height:100px;
+    background: #1db176;
+}
+.header-footer.logo {
+    float: left;
+    padding-left: 18.75%;
+    padding-top: 2%;
+}
+.header-footer .top-nav {
+    float:right;
+    margin-right: -120px;
+    font-size: 16px;
+
+}
+.header-footer ul li {
+    display: inline-block;
+    padding: 39px 25px;
+    color: white;
+    text-align: center;
+
+}
+.footer{
+    background-color: #1db176;
+    height: 200px;
+    padding-right: 18.75%;
+    padding-left: 18.75%;
+    color: white;
+}
+.footer-middle-left{
+    float: left;
+    width: 200px;
+    height: 100%;
+
+}
+.footer-middle-left p{
+    font-size: 16px;
+    padding-top: 32px;
+}
+.footer-middle-left ul{
+    float: left;
+    padding-top: 60px;
+}
+
+.footer-middle-left ul li{
+    display: inline-block;
+}
+.footer-middle-middle{
+    float: left;
+    width: 280px;
+    height: 100%;
+}
+.footer-middle-middle p{
+    font-size: 16px;
+    padding-top: 32px;
+    padding-bottom: 20px;
+}
+.footer-middle-left ul{
+    float: left;
+    padding-top: 60px;
+}
+
+.footer-middle-left ul li{
+    display: inline-block;
+}
+.footer-middle-middle{
+    float: left;
+    width: 280px;
+    height: 100%;
+}
+.footer-middle-middle p{
+    font-size: 16px;
+    padding-top: 32px;
+    padding-bottom: 20px;
+}
+.footer-middle-middle ul  li{
+    float: left;
+    padding-right: 30px;
+    margin: 10px 0;
+}
+.footer-middle-right{
+    float: right;
+}
+.footer-middle-right{
+    float: right;
+}
+.footer-middle-right p{
+    font-size: 16px;
+    padding-top: 32px;
+    padding-bottom: 10px;
+}
+.copyright{
+    color: white;
+    background-color: #1db176;
+    text-align: center;
+    font-size: 12px;
+    line-height: 30px;
+    border-top: 1px solid #32c086;
+}
+.scroll{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    min-height: 600px;
+}
+.carousel {
+    position: absolute;
+    transition: all 0.5s ease-in 0s;
+
+}
+.carousel .banner {
+    float: left;
+    text-align: center;
+    width: 25%;
+}
+.button {
+    text-align: center;
+    border: none;
+}
+
+.pre {
+    position: absolute;
+    top: 44%;
+    left: 12%;
+    width: 27px;
+    height: 46px;
+    background: url("picture/task7-icon-pre.png") no-repeat ;
+}
+
+.next {
+    position: absolute;
+    top: 44%;
+    right: 12%;
+    width: 27px;
+    height: 46px;
+    background: url("picture/task7-icon-next.png") no-repeat ;
+}
