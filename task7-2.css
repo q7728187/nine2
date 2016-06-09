@@ -1,0 +1,96 @@
+.banner{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.banner img{
+    width: 100%;
+    max-width: 1920px;
+}
+.main{
+    margin: 0 18.75%;
+    overflow: hidden;
+    color: #888888;
+    background-color: #fafafa;
+    padding-bottom: 230px;
+}
+.subnav{
+    margin: 30px 0;
+}
+.subnav p{
+    font-size: 16px;
+}
+.subnav span{
+    color:#1ba36e;
+}
+.subnav p{
+    font-size: 16px;
+}
+.main-left{
+    width: 250px;
+    border: 1px solid #999999;
+    text-align: center;
+    float: left;
+    margin-right: 25px;
+    padding-bottom: 40px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 1px #888888;
+    border-radius: 2px;
+
+}
+.main-left-list{
+    margin-left: 43%;
+    width: 30%;
+    color: #1ba36e;
+    background-color: #ffffff;
+}
+.main-left-list-header{
+    padding: 15px 30px;
+    border-bottom: 1px solid #888888;
+}
+.main-left h2{
+    font-size: 16px;
+}
+.main-left ul{
+
+}
+.main-left-list li{
+    font-size: 14px;
+    text-align: left;
+    list-style-image: url("picture/task7-2-list-style.png");
+    margin-top: 35px;
+}
+.main-right{
+    width: 75%;
+    font-size: 14px;
+    border: 1px solid #83b09a;
+    overflow: hidden;
+    float: left;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 1px #999;
+    border-radius: 2px;
+}
+.main-right-header{
+    padding: 30px 70px;
+    text-align: left;
+    line-height: 25px;
+    border-bottom: 1px solid #999;
+}
+.main-right-header-logo{
+    overflow: hidden;
+    float: left;
+    height: 80px;
+}
+.main-right-header img{
+    display: inline-block;
+    vertical-align: top;
+}
+.main-right-content{
+    text-indent: 2em;
+    padding: 30px 70px;
+    font-size: 14px;
+    line-height: 30px;
+}
+.main-right-content p{
+    margin-bottom: 40px;
+}

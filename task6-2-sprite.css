@@ -37,7 +37,7 @@ body{
     background-color: #2d94fb;
     overflow: hidden;
     text-align: center;
-    font-size: 3rem;
+    font-size: rem;
     padding: 1rem;
 }
 .header-left{
@@ -48,7 +48,7 @@ body{
 }
 .msg-header{
     background-color: #5fc0ce;
-    font-size: 2.5rem;
+    font-size: 3rem;
     padding: 1rem;
     overflow: hidden;
 }
@@ -119,6 +119,8 @@ body{
     margin-top: 5%;
     opacity: 0;
     font-size: 0;
+    overflow: hidden;
+    height: 2rem;
 }
 .main{
     background-color: #2d94fb;
@@ -130,11 +132,13 @@ ul{
 li{
     display: inline-block;
     background-repeat:no-repeat ;
-    width: 20%;
+    width: 2rem;
+    height: 2rem;
+    /*
     padding: 12.5% 1%;
+    */
     list-style: none;
     background-size: 80%;
-
 
 }
 .box{

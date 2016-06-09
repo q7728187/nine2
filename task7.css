@@ -13,9 +13,7 @@ ul{
     list-style: none;
 }
 body{
-    /*
-    max-width: 1200px;
-    */
+   width: 100%;
 }
 .header {
     width: 100%;
@@ -94,6 +92,7 @@ body{
     float: left;
     width: 200px;
     height: 100%;
+    margin-right: 80px;
 
 }
 .footer-middle-left p{
@@ -159,43 +158,4 @@ body{
     font-size: 12px;
     line-height: 30px;
     border-top: 1px solid #32c086;
-}
-.scroll{
-    width: 100%;
-    position: relative;
-    margin: 0 auto;
-    overflow: hidden;
-    min-height: 600px;
-}
-.carousel {
-    position: absolute;
-    transition: all 0.5s ease-in 0s;
-
-}
-.carousel .banner {
-    float: left;
-    text-align: center;
-    width: 25%;
-}
-.button {
-    text-align: center;
-    border: none;
-}
-
-.pre {
-    position: absolute;
-    top: 44%;
-    left: 12%;
-    width: 27px;
-    height: 46px;
-    background: url("picture/task7-icon-pre.png") no-repeat ;
-}
-
-.next {
-    position: absolute;
-    top: 44%;
-    right: 12%;
-    width: 27px;
-    height: 46px;
-    background: url("picture/task7-icon-next.png") no-repeat ;
 }

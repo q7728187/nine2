@@ -1,3 +1,42 @@
+.scroll{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    min-height: 600px;
+}
+.carousel {
+    position: absolute;
+    transition: all 0.5s ease-in 0s;
+
+}
+.carousel .banner {
+    float: left;
+    text-align: center;
+    width: 25%;
+}
+.button {
+    text-align: center;
+    border: none;
+}
+
+.pre {
+    position: absolute;
+    top: 44%;
+    left: 12%;
+    width: 27px;
+    height: 46px;
+    background: url("picture/task7-icon-pre.png") no-repeat ;
+}
+
+.next {
+    position: absolute;
+    top: 44%;
+    right: 12%;
+    width: 27px;
+    height: 46px;
+    background: url("picture/task7-icon-next.png") no-repeat ;
+}
 .main{
     box-sizing: border-box;
     margin: 0 18.25%;

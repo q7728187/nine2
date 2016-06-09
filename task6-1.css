@@ -11,7 +11,7 @@ img{
     margin: 0 auto;
 }
 .header{
-    background-color: #2d94fb;
+    background-color: #36bac0;
     height: 80px;
 }
 .header img {
@@ -52,10 +52,10 @@ img{
     text-align: center;
 }
 .btn button{
-    font-size: 1.5em;
+    font-size: 2.5em;
     width: 80%;
-    margin: 1em;
-    padding: 0.8em;
+    margin: 5%;
+    padding: 5%;
     background-color: #36bac0;
 }
 .btn span{
