@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+.header{
+    background-color: #2d94fb;
+    padding: 0 18.75%;
+    font-size: 14px;
+    line-height: 40px;
+    color: #fff;
+    vertical-align: middle;
+}
+.header ul{
+    float: right;
+ }
+.header li{
+    display: inline-block;
+    width: 55px;
+    text-align: center;
+}
+.header li:hover{
+    width: 100px;
+    color: #333;
+    background: #fff;
+}
+.main {
+    width: 1200px;
+    margin: 0 auto;
+}
+.nav {
+    overflow: hidden;
+    background-color: #fafafa;
+    padding: 0 18.75%;
+}
+.nav ul{
+    float: right;
+    padding: 28px 0;
+
+}
+.nav li{
+    display: inline-block;
+    margin-left: 60px;
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+    border-radius: 5px;
+    background: #fff;
+}
+.copyright{
+    background-color: #2d94fb;
+    text-align: center;
+    padding: 0 18.75%;
+    font-size: 12px;
+    line-height: 30px;
+}
+.step{
+    overflow: hidden;
+    margin-top: 35px;
+}
+.step ul{
+    float: right;
+}
+.step li{
+    display: inline-block;
+
+}
+.step li p{
+    text-align: center;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #cccccc;
+    margin: 0 auto;
+    line-height: 30px;
+    background-color: #cccccc;
+    position: relative;
+    top: 15px;
+    left: 0;
+    color: white;
+}
+.step li span{
+    display: block;
+    border-top: 4px solid #cccccc;
+    font-size: 18px;
+    padding: 40px;
+}
+#dingzhizhixiang p{
+    background-color: #ff7f02;
+    border-color: #ff7f02;
+}
+#dingzhizhixiang span{
+    display: block;
+    font-size: 18px;
+    padding: 40px;
+    border-top: 4px solid #ff7f02;
+}
+
+.guidance{
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 700;
+    border-left: 3px solid #1d7ad9;
+}
+.type{
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    background-color: #cccccc;
+    padding: 5px;
+    vertical-align: middle;
+}
+.type span{
+    margin-left: 10px;
+    color: #1d7ad9;
+}
+.type img{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 5px;
+}
+.box li{
+    padding: 0 5px;
+    font-size: 18px;
+}
+.main .btn {
+    width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #e7e7e7;
+    border-top: none;
+}
+.main .btn button {
+    margin-top: 140px;
+    margin-bottom: 100px;
+    padding: 10px 20px;
+    width: 180px;
+    font-size: 24px;
+    color: #fff;
+    background: #e34f4f;
+    border-radius: 5px;
+}
+.type-2{
+    line-height: 90px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.type-2 label{
+    line-height: 20px;
+
+}
+.type-2 span{
+    margin-right: 40px;
+    margin-left: 10px;
+
+}
+.select1{
+    float: right;
+    margin-top: 25px;
+}
+.main select{
+    padding: 10px 45px 10px 15px;
+    font-size: 14px;
+    color: #a9a9a9;
+    /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+    border: solid 1px #e8e8e8;
+    /*很关键：将默认的select选择框样式清除*/
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    /*在选择框的最右侧中间显示小箭头图片*/
+    background: url(picture/task9-xialajiantou.png) 90% center no-repeat;
+    /*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+}
+input[type=radio]{
+    display: none;
+}
+.single-selection {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 15px;
+}
+
+input[type=radio] {
+    display: none;
+}
+.single-selection:before {
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 16px;
+    margin-right: 10px;
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    bottom: 0;
+    background-color:white;
+    border: 1px solid #a9a9a9;
+}
+
+.radio .single-selection:before {
+    border-radius: 8px;
+}
+.checkbox .single-selection {
+    margin-bottom: 10px;
+}
+.checkbox .single-selection:before {
+    border-radius: 3px;
+}
+
+input[type=radio]:checked + .single-selection:before {
+    content: "\2022";
+    color: #f3f3f3;
+    font-size: 20px;
+    text-align: center;
+    line-height: 18px;
+    background-color: #1d7ad9;
+}
+input[type=text]{
+    width: 70px;
+    height: 30px;
+}
+.radii{
+    margin-right: 20px;
+}
+.mm{
+    margin-right: 60px;
+}
+.size1,.size2{
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.size2{
+    position: relative;
+}
+.select2{
+    position: absolute;
+    right: 8px;
+    top: -20px;
+
+}
+.box{
+    margin-top: 10px;
+    border: 1px solid #e7e7e7;
+}
+.footer {
+    overflow: hidden;
+    margin-top: 50px;
+    padding-top: 70px;
+    font-size: 14px;
+    color: #999;
+    background: #f9f9f9;
+}
+.footer{
+    overflow: hidden;
+    padding: 70px 18.75%;
+}
+.footer-left {
+    float: left;
+    width: 40%;
+    padding-bottom: 120px;
+    font-size: 18px;
+}
+.footer-middle {
+    float: left;
+    width: 30%;
+}
+.footer-middle ul li {
+    display: inline-block;
+    margin: 10px;
+}
+.footer-middle ul li span {
+    color: #1277dc;
+}
+.footer-right {
+    float:right;
+}
+.footer-right ul {
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+}
+.footer-right ul{
+    display: inline-block;
+    float: left;
+}
+
+.img-erweima li{
+    padding: 0;
+}
+.contact-information{
+    padding: 5px;
+}
