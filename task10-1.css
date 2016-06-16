@@ -1,0 +1,209 @@
+.main h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 800;
+}
+.good,.good-2,.good-3,.main-middle1-right{
+    height: 200px;
+}
+.good p,.good-2 p,.good-3 p{
+    font-size: 1.6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: left;
+    color: #999;
+}
+body{
+    background-color: #fafafa;
+}
+.good{
+
+    text-align: center;
+}
+.good p{
+    text-align: left;
+    font-size: 16px;
+}
+.good-2 p{
+    text-align: left;
+    font-size: 16px;
+}
+.good-2{
+    padding-top: 14px;
+    text-align: center;
+}
+.good-3{
+    padding-top: 9px;
+}
+
+.main-middle1-right {
+    text-align: center;
+    border-left: 1px dashed #999;
+    padding-top: 6rem;
+}
+.main-middle1-right p{
+    font-size: 1.8rem;
+    color: #999;
+}
+.main-middle1-right span {
+    color: #1ba36e;
+    font-size: 1.6rem;
+}
+@media screen and (max-width: 767px) {
+    .main-middle1-right {
+        border: none;
+        padding-top: 0;
+    }
+}
+.main-middle-1{
+    font-size: 18px;
+    height: 80px;
+    color: #999;
+}
+h3{
+    font-weight: 800;
+    font-size: 18px;
+    padding: 30px 0;
+}
+.main-middle-1 p{
+    font-size: 14px;
+padding-top: 25px}
+
+.circle1 {
+    display: inline-block;
+    float: left;
+    vertical-align: middle;
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+    font-size: 18px;
+    line-height: 70px;
+    text-align: center;
+    color: #29b078;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px #e6e6e6;
+}
+.arrow {
+    display: inline-block;
+    float: right;
+    vertical-align: middle;
+    width: 28px;
+    height: 26px;
+    margin-top: 25px;
+    background-image: url("picture/task7-1-jiantou.png");
+}
+.show{
+    border: 1px solid #eeeded;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding: 15px;
+
+}
+.show img {
+    margin-bottom: 30px;
+}
+.show h3{
+    margin-bottom: 20px;
+}
+.show p{
+    width: 200px;
+    margin: 0 auto;
+    line-height: 22px;
+    color: #999;
+    margin-bottom: 25px;
+}
+.more {
+    width: 6rem;
+    height: 2rem;
+    margin: 2% auto;
+}
+.circle2 {
+    float: left;
+    width: 1rem;
+    height: 1rem;
+    margin: 3%;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border: 1px solid rgba(225, 225, 225, 0.5);
+
+}
+.main-middle-3 .logo{
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 1px #ddd;
+    margin-left: 0
+}
+.main-middle-3 ul{
+    text-align: center;
+    padding-left: 0;
+}
+.main-middle-3 ul li {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 50px 0;
+    width: 200px;
+    text-align: center;
+}
+.main-bottom h3{
+    text-align: center;
+}
+.main-bottom{
+    background-color: #ffffff;
+    font-size: 14px;
+}
+.main-bottom ul{
+    text-align: center;
+    padding-left: 0;
+
+}
+.main-bottom ul li{
+float: left;
+    width: 10%;
+    font-size: 14px;
+    color: #999;
+    line-height: 32px;
+    padding: 0;
+    margin: 0;
+}
+.main-bottom a{
+    position: relative;
+    top: 0;
+    right: 15px;
+}
+
+.main-bottom a{
+    color:#999;
+}
+
+@media screen and (max-width: 767px) {
+    .main-bottom ul li  {
+        width: 100%;
+        text-align: center;
+        padding-left: 25px ;
+    }
+}
+.main {
+    margin-top: 150px ;
+}
+.main-middle-1{
+    margin-top: 20px;
+}
+.main-middle-2{
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.main-middle-3{
+    margin-bottom: 70px;
+}
+.main-bottom h3{
+    padding: 0px 0;
+}
+.main-bottom{
+    padding-bottom: 20px;
+}
+.carousel{
+    position: relative;
+}
