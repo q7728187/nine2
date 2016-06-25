@@ -1,0 +1,345 @@
+@charset "utf-8";
+@media screen and (max-width: 1100px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+@media screen and (max-width: 992px) {
+    html {
+        font-size: 52.5%;
+    }
+}
+@media screen and (max-width: 767px) {
+    html {
+        font-size: 42.5%;
+    }
+    .header{
+        .contact-phone{
+            margin-bottom: 20px;
+        }
+    }
+
+}
+.header{
+
+    background-color: #1d7ad9;
+    padding:  10px 0 10px 0;
+    vertical-align: middle;
+    span{
+        font-size: 1.6rem;
+        color: #ffffff;
+        margin-right: -10px;
+    }
+    li{
+        list-style: none;
+        float: right;
+        font-size: 1.6rem;
+        margin: 0 10px;
+        padding: 0 10px;
+    }
+    li:hover{
+        font-size: 1.6rem;
+        background-color: white;
+        padding: 10px 30px;
+        float: right;
+        margin: -10px 0;
+    }
+}
+.nav{
+    background-color: #f9f9f9;
+    width: 100%;
+    ul{
+        padding-left: 0;
+    }
+    li{
+        display: inline-block;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 1.6rem;
+        background-color: white;
+        margin: 15px 0 15px 45px;
+
+    }
+    .home{
+        background-color: #1d7ad9;
+    }
+}
+@media screen and (max-width: 992px){
+    .nav{
+        ul{
+            text-align: center;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .nav{
+        ul{
+            text-align: center;
+        }
+        li{
+            padding: 10px 10px;
+
+            margin: 15px 2px;
+        }
+    }
+}
+.step{
+    overflow: hidden;
+    margin-top: 35px;
+    li{
+        width: 25%;
+    }
+    ul{
+        width: 100%;
+        max-width: 630px;
+
+    }
+    span{
+        text-align: center;
+    }
+}
+.step ul{
+    float: right;
+    padding-left: 0;
+}
+.step li{
+    display: inline-block;
+
+}
+.step li p{
+    text-align: center;
+    font-size: 1.6rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #cccccc;
+    margin: 0 auto;
+    line-height: 20px;
+    background-color: #cccccc;
+    position: relative;
+    top: 10px;
+    left: 0;
+    color: white;
+}
+.step li span{
+    display: block;
+    border-top: 4px solid #cccccc;
+    font-size: 1.8rem;
+    padding: 30px 0;
+}
+#custom{
+    p{
+        background-color: #ff7f02;
+        border-color: #ff7f02;
+    }
+    span{
+        display: block;
+        font-size: 1.8rem;
+        border-top: 4px solid #ff7f02;
+        color: #ff7f02;
+        margin: 0 2px;
+    }
+}
+.guidance{
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    border-left: 3px solid #1d7ad9;
+    padding-left: 5px;
+}
+.main{
+    background-color: #ffffff;
+}
+.box{
+    border-radius: 5px;
+    border: 1px solid #f2f2f2;
+    font-weight: normal;
+}
+.box-step{
+    height: 40px;
+    font-size: 1.8rem;
+    line-height: 40px;
+    background-color: #f2f2f2;
+    padding: 5px;
+    vertical-align: middle;
+    color: #1d7ad9;
+    span{
+        margin-left: 10px;
+        vertical-align:middle;
+    }
+    img{
+
+        position: relative;
+        top: -0.3rem;
+        max-width: 22px;
+    }
+}
+.type{
+    font-size: 1.8rem;
+    padding-left: 40px;
+    padding-right: 15px;
+    margin:0 0;
+    position: relative;
+    background-color: #fbfcff;
+    span{
+        display: inline-block;
+        position: relative;
+        top: 6px;
+        line-height: 80px;
+    }
+    .box-label{
+        .mm{
+            position: relative;
+            top:0;
+        }
+    }
+
+}
+@media screen and (max-width: 767px) {
+    .type{
+        padding-left: 15px;
+    }
+}
+
+
+.select1{
+    float: right;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+@media screen and (max-width: 767px) {
+    .select1{
+        float: none;
+    }
+}
+
+.box select{
+    padding: 10px 45px 10px 15px;
+    font-size: 1.4rem;
+    color: #a9a9a9;
+    /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+    border: solid 1px #e8e8e8;
+    /*很关键：将默认的select选择框样式清除*/
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    /*在选择框的最右侧中间显示小箭头图片*/
+    background: url(picture/task9-xialajiantou.png) 90% center no-repeat;
+    /*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+}
+.single-selection {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 15px;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+.single-selection:before {
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 16px;
+    margin-right: 10px;
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    top:50%;
+    background-color:white;
+    border: 1px solid #a9a9a9;
+
+}
+input[type=radio]:checked + .single-selection:before {
+    content: "\2022";
+    color: #f3f3f3;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 17px;
+    background-color: #1d7ad9;
+}
+input[type=text]{
+    width: 70px;
+    height: 30px;
+}
+.select2{
+    position: absolute;
+    top:-20%;
+    right: 50px;
+}
+@media screen and (max-width: 992px) {
+    .select2{
+        position: relative;
+        right: -550px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .select2{
+        position: static;
+        margin-left: 15px;
+    }
+}
+
+.btn{
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid #f2f2f2;
+
+    button{
+        margin-top: 140px;
+        margin-bottom: 100px;
+        padding: 10px 20px;
+        width: 180px;
+        font-size: 2.4rem;
+        color: #fff;
+        background: #e34f4f;
+        border-radius: 5px;
+    }
+
+}
+.footer{
+    margin-top: 60px;
+    background-color: #f9f9f9;
+    font-size: 1.4rem;
+    padding-top: 70px;
+    color: #bababa;
+    .footer-left{
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+    .footer-middle{
+        ul{
+            padding-left: 0;
+        }
+        li{
+            display: inline-block;
+            margin: 0 10px 10px 0;
+
+        }
+
+    }
+    .footer-right{
+        ul{
+            display: inline-block;
+            padding-left: 0;
+        }
+        img{
+            margin-top: -10px;
+        }
+    }
+    li{
+        list-style: none;
+    }
+}
+.copyright{
+    background-color: #2d94fb;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 30px;
+}

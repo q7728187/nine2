@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="task12.css">
+</head>
+<body>
+
+<div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12 contact-phone">
+                <span>客服热线：010-594-78634</span>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+                <ul>
+                    <li>登陆</li>
+                    <li>注册</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="nav">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-sm-9 col-md-12 col-xs-12 pull-right">
+                <ul>
+                    <li class="home">首页</li>
+                    <li>在线定制</li>
+                    <li>标准箱</li>
+                    <li>品质保证</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main container">
+    <div class="step">
+        <ul>
+            <li id="custom">
+                <p>1</p>
+                <span>1.定制纸箱</span>
+            </li><li>
+            <p>2</p>
+            <span>2.选择数量</span>
+        </li><li>
+            <p>3</p>
+            <span>3.上传附件</span>
+        </li><li>
+            <p>4</p>
+            <span>4.确认下单</span>
+        </li>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="guidance">
+            <p>请您按照以下步骤来定制您的纸箱</p>
+        </div>
+    </div>
+
+</div>
+<div class="container">
+    <div class=" box">
+        <div class="box-step ">
+            <img src="picture/task9-icon-box.png"><span>选择箱</span>
+        </div>
+        <div class="type row">
+            <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 box-label">
+                <input type="radio" name="type" id="suit cases" class="hidden">
+                <label for="suit cases" class="single-selection">
+                    <span>对口箱</span>
+                </label>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 box-label">
+                <input type="radio" name="type" id="the plane box" class="hidden">
+                <label for="the plane box" class="single-selection">
+                    <span>飞机盒</span>
+                </label>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 box-label">
+                <input type="radio" name="type" id="hat box" class="hidden">
+                <label for="hat box" class="single-selection">
+                    <span>天地盖</span>
+                </label>
+            </div>
+            <div class="col-lg-6 col-md-3 col-sm-3 col-xs-6 box-label">
+                <label class="select1">
+                    <select >
+                        <option value="">查看详情</option>
+                    </select>
+                </label>
+            </div>
+
+        </div>
+        <div class="box-step">
+            <img src="picture/task9-icon-chicun.png"><span>确认尺寸</span>
+        </div>
+        <div class="row type">
+            <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 box-label">
+                <input type="radio" name="size" id="inside" class="hidden">
+                <label for="inside" class="single-selection ">
+                    <span class="radii">内径</span>
+                </label>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 box-label">
+
+                <label>长
+                    <input type="text" ><span class="mm">mm</span>
+                </label>
+
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 box-label">
+                <label>宽
+                    <input type="text" ><span class="mm">mm</span>
+                </label>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 box-label">
+                <label>高
+                    <input type="text"><span class="mm">mm</span>
+                </label>
+
+            </div>
+        </div>
+        <div class="row type">
+            <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 box-label">
+                <input type="radio" name="size" id="outside" class="hidden">
+                <label for="inside" class="single-selection ">
+                    <span class="radii">外径</span>
+                </label>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 box-label">
+
+                <label>长
+                    <input type="text" ><span class="mm">mm</span>
+                </label>
+
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 box-label">
+                <label>宽
+                    <input type="text" ><span class="mm">mm</span>
+                </label>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 box-label">
+                <label>高
+                    <input type="text"><span class="mm">mm</span>
+                </label>
+
+            </div>
+            <label>
+                <select class="select2">
+                    <option value="">查看详情</option>
+                </select>
+            </label>
+        </div>
+        <div class="box-step">
+            <img src="picture/task9-icon-jianzi.png"><span>选择材质</span>
+        </div>
+        <div class="row type">
+            <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 box-label">
+                <input type="radio" id="material-1" name="texture" class="hidden">
+                <label for="material-1" class="single-selection">
+                    <span>三层A瓦优质</span>
+                </label>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 box-label">
+                <input type="radio" id="material-2" name="texture" class="hidden">
+                <label for="material-1" class="single-selection">
+                    <span>三层A瓦优质</span>
+                </label>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 box-label">
+                <input type="radio" id="material-3" name="texture" class="hidden">
+                <label for="material-1" class="single-selection">
+                    <span>三层A瓦优质</span>
+                </label>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 box-label">
+                <input type="radio" id="material-4" name="texture" class="hidden">
+                <label for="material-1" class="single-selection">
+                    <span>三层A瓦优质</span>
+                </label>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 box-label">
+                <input type="radio" id="material-5" name="texture" class="hidden">
+                <label for="material-1" class="single-selection">
+                    <span>三层A瓦优质</span>
+                </label>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 box-label">
+                <select class="select1">
+                    <option value="">查看详情</option>
+                </select>
+            </div>
+         </div>
+        <div class="btn">
+            <button type="submit">下一步</button>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-4 col-xs-12  footer-left">
+                51包装网— 纸箱包装首选服务平台
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 footer-middle">
+                <ul>
+                    <li><a href=""><span>关于我们</span></a></li>
+                    <li>配送流程</li>
+                    <li>联系我们</li>
+                </ul>
+                <ul>
+                    <li>下单指南</li>
+                    <li>媒体介绍</li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 footer-right">
+                <ul>
+                    <li>TEL：400-0000-000</li>
+                    <li>企业QQ：123456789</li>
+                    <li>微信号：XXXXXXX</li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="picture/task9-erweima.png">
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <span>北京五一包装科技有限公司Copyright ©201551baozhuang.com015 All rights reserved. 京icp备99999999-1</span>
+</div>
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
