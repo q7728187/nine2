@@ -112,6 +112,7 @@ ul{
     background-color: #f2f2f2;
     padding: 5px;
     vertical-align: middle;
+    overflow: hidden;
 }
 .type span{
     margin-left: 10px;
