@@ -1,0 +1,383 @@
+@charset "utf-8";
+@media screen and (max-width: 1100px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 52.5%;
+  }
+}
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 42.5%;
+  }
+}
+@font-face {
+  font-family: "ctcuheisj";
+  src: url('font/创艺简粗黑.ttf');
+}
+body {
+  font-family: "Microsoft YaHei";
+}
+label {
+  font-weight: 400;
+}
+.header {
+  background-color: #1d7ad9;
+  padding: 0;
+  vertical-align: middle;
+  line-height: 50px;
+}
+.header span {
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin-right: -10px;
+}
+.header li {
+  list-style: none;
+  float: right;
+  font-size: 1.6rem;
+  padding: 0 10px;
+  width: 60px;
+  text-align: center;
+  border-left: 1px solid white ;
+  color: white;
+}
+.header li:hover {
+  position: relative;
+  left: 10px;
+  width: 100px;
+  color: #333;
+  background: #fff;
+  margin-right: 10px;
+}
+@media screen and (max-width: 376px) {
+  .header {
+    line-height: 40px;
+  }
+  .contact-phone {
+    width: 100%;
+  }
+  .header-sign {
+    width: 100%;
+  }
+}
+.nav {
+  background-color: #f9f9f9;
+  width: 100%;
+}
+.nav ul {
+  padding-left: 0;
+}
+.nav li {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  background-color: white;
+  margin: 15px 0 15px 45px;
+  box-shadow: 1px 1px 1px #cccccc;
+}
+.nav li:hover {
+  background-color: #1d7ad9;
+  color: white;
+}
+@media screen and (max-width: 992px) {
+  .nav ul {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .nav ul {
+    text-align: center;
+  }
+  .nav li {
+    padding: 10px 10px;
+    margin: 15px 2px;
+  }
+}
+.step {
+  font-family: ctcuheisj;
+  overflow: hidden;
+  margin-top: 35px;
+  font-weight: bold;
+  color: #cccccc;
+}
+.step li {
+  width: 25%;
+}
+.step ul {
+  width: 100%;
+  max-width: 630px;
+}
+.step span {
+  text-align: center;
+  margin-right: 0;
+}
+.step p {
+  border: 0;
+}
+.step ul {
+  float: right;
+  padding-left: 0;
+}
+.step li {
+  display: inline-block;
+}
+.step li p {
+  text-align: center;
+  font-size: 1.6rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #cccccc;
+  margin: 0 auto;
+  line-height: 30px;
+  background-color: #cccccc;
+  position: relative;
+  top: 15px;
+  left: 0;
+  color: white;
+}
+.step li span {
+  display: block;
+  border-top: 5px solid #cccccc;
+  font-size: 1.8rem;
+  padding: 30px 0;
+}
+#custom p {
+  background-color: #ff7f02;
+  border-color: #ff7f02;
+}
+#custom span {
+  font-family: ctcuheisj;
+  display: block;
+  font-size: 1.8rem;
+  border-top: 5px solid #ff7f02;
+  color: #ff7f02;
+  font-weight: bold;
+}
+.guidance {
+  margin-top: 20px;
+  margin-left: 15px;
+  font-size: 2.2rem;
+  font-weight: 700;
+  border-left: 3px solid #1d7ad9;
+  padding-left: 5px;
+}
+.main {
+  background-color: #ffffff;
+}
+.box {
+  color: #666;
+  border-radius: 5px;
+  border: 1px solid #f2f2f2;
+}
+.box-step {
+  height: 40px;
+  font-size: 1.8rem;
+  line-height: 40px;
+  background-color: #f2f2f2;
+  padding: 5px;
+  vertical-align: middle;
+  color: #1d7ad9;
+}
+.box-step span {
+  margin-left: 10px;
+  vertical-align: top;
+  line-height: 30px;
+}
+.box-step img {
+  position: relative;
+  top: -0.6rem;
+  max-width: 22px;
+}
+.diameter {
+  margin-right: -30px;
+}
+@media screen and (max-width: 1200px) {
+  .diameter {
+    margin-right: 0;
+  }
+}
+.type {
+  font-size: 1.8rem;
+  padding-left: 40px;
+  padding-right: 15px;
+  margin: 0 0;
+  position: relative;
+  background-color: #fbfcff;
+}
+.type span {
+  display: inline-block;
+  position: relative;
+  top: 6px;
+}
+.type .box-label {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 40px;
+  font-weight: 400;
+  color: #666666;
+}
+.type .box-label .mm {
+  position: relative;
+  top: -2px;
+}
+@media screen and (max-width: 767px) {
+  .type {
+    padding-left: 15px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .select1 {
+    float: left;
+  }
+}
+@media screen and (max-width: 900px) {
+  .select4 {
+    position: static;
+  }
+}
+.select1 {
+  float: right;
+  margin-top: 30px;
+  margin-right: 15px;
+}
+@media screen and (max-width: 1200px) {
+  .select1 {
+    float: left;
+  }
+}
+@media screen and (max-width: 767px) {
+  .select1 {
+    float: none;
+  }
+}
+.box select {
+  padding: 10px 45px 10px 15px;
+  font-size: 1.4rem;
+  color: #a9a9a9;
+  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+  border: solid 1px #e8e8e8;
+  /*很关键：将默认的select选择框样式清除*/
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  /*在选择框的最右侧中间显示小箭头图片*/
+  background: url(picture/task9-xialajiantou.png) 90% center no-repeat;
+  /*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+}
+.single-selection {
+  display: inline-block;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 0px;
+  font-weight: 500;
+}
+input[type=radio] {
+  display: none;
+}
+.single-selection:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    bottom: 0;
+    background-color:white;
+    border: 1px solid #a9a9a9;
+}
+input[type=radio]:checked +.single-selection:before {
+    content: "";
+
+    width: 6px;
+    height: 6px;
+    border: 7px solid #1d7ad9;
+}
+input[type=text] {
+  width: 70px;
+  height: 30px;
+}
+.box-select {
+  position: relative;
+}
+.select2 {
+  position: absolute;
+  top: -180%;
+  right: -100%;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 1199px) {
+  .box-select {
+    height: 100px;
+  }
+  .select2 {
+    position: static;
+  }
+}
+@media screen and (max-width: 767px) {
+  .select2 {
+    position: static;
+    margin-left: 10px;
+  }
+}
+.btn {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+  border-top: 1px solid #f2f2f2;
+}
+.btn button {
+  margin-top: 140px;
+  margin-bottom: 100px;
+  padding: 10px 20px;
+  width: 180px;
+  font-size: 2.4rem;
+  color: #fff;
+  background: #e34f4f;
+  border-radius: 5px;
+  border: 0;
+}
+.footer {
+  margin-top: 60px;
+  background-color: #f9f9f9;
+  font-size: 1.4rem;
+  padding-top: 70px;
+  color: #bababa;
+}
+.footer .footer-left {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+.footer .footer-middle ul {
+  padding-left: 0;
+}
+.footer .footer-middle li {
+  display: inline-block;
+  margin: 0 10px 10px 0;
+}
+.footer .footer-right ul {
+  display: inline-block;
+  padding-left: 0;
+}
+.footer .footer-right img {
+  margin-top: -10px;
+}
+.footer li {
+  list-style: none;
+}
+.copyright {
+  background-color: #2d94fb;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 30px;
+}
