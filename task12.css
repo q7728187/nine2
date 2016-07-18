@@ -18,11 +18,20 @@
   font-family: "ctcuheisj";
   src: url('font/创艺简粗黑.ttf');
 }
+:before {
+  box-sizing: content-box;
+}
+.radio {
+  margin: 0;
+}
 body {
   font-family: "Microsoft YaHei";
 }
 label {
   font-weight: 400;
+}
+a {
+  color: #999;
 }
 .header {
   background-color: #1d7ad9;
@@ -53,6 +62,9 @@ label {
   background: #fff;
   margin-right: 10px;
 }
+.radio {
+  margin-bottom: 3px;
+}
 @media screen and (max-width: 376px) {
   .header {
     line-height: 40px;
@@ -67,35 +79,47 @@ label {
 .nav {
   background-color: #f9f9f9;
   width: 100%;
+  font-weight: 400;
 }
 .nav ul {
   padding-left: 0;
+  width: auto;
 }
 .nav li {
   display: inline-block;
-  padding: 10px 15px;
   border-radius: 5px;
   font-size: 1.6rem;
   background-color: white;
-  margin: 15px 0 15px 45px;
+  margin: 20px 0 20px 45px;
   box-shadow: 1px 1px 1px #cccccc;
 }
 .nav li:hover {
-  background-color: #1d7ad9;
   color: white;
 }
-@media screen and (max-width: 992px) {
-  .nav ul {
-    text-align: center;
-  }
+.nav > li > a {
+  color: inherit;
 }
-@media screen and (max-width: 767px) {
+.nav > li > a:focus,
+.nav > li > a:hover {
+  background-color: #1d7ad9;
+  border-radius: 5px;
+}
+.header-nav {
+  font-size: 4rem;
+}
+@media screen and (max-width: 768px) {
   .nav ul {
+    width: 100%;
     text-align: center;
+    box-sizing: border-box;
+    display: block;
+    float: none;
+    margin: 0;
   }
   .nav li {
-    padding: 10px 10px;
-    margin: 15px 2px;
+    display: block;
+    width: 100%;
+    margin: 0;
   }
 }
 .step {
@@ -179,7 +203,9 @@ label {
   height: 40px;
   font-size: 1.8rem;
   line-height: 40px;
-  background-color: #f2f2f2;
+  background: -webkit-radial-gradient(#f2f2f2, #f5f5f5);
+  background: radial-gradient(#f2f2f2, #f5f5f5);
+  filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#f2f2f2', endColorStr='f5f5f5', gradientType='0');
   padding: 5px;
   vertical-align: middle;
   color: #1d7ad9;
@@ -196,6 +222,10 @@ label {
 }
 .diameter {
   margin-right: -30px;
+  margin-top: 40px;
+}
+.radio {
+  margin-bottom: 5px;
 }
 @media screen and (max-width: 1200px) {
   .diameter {
@@ -225,6 +255,9 @@ label {
 .type .box-label .mm {
   position: relative;
   top: -2px;
+}
+label span {
+  margin-bottom: 3px;
 }
 @media screen and (max-width: 767px) {
   .type {
@@ -263,42 +296,43 @@ label {
   /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
   border: solid 1px #e8e8e8;
   /*很关键：将默认的select选择框样式清除*/
-  appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
+  appearance: none;
   /*在选择框的最右侧中间显示小箭头图片*/
   background: url(picture/task9-xialajiantou.png) 90% center no-repeat;
   /*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+}
+.box select::-ms-expand {
+  display: none;
 }
 .single-selection {
   display: inline-block;
   position: relative;
   padding-left: 25px;
-  margin-right: 0px;
+  margin-right: 0;
   font-weight: 500;
 }
 input[type=radio] {
   display: none;
 }
-.single-selection:before {
-    content: "";
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    position: absolute;
-    border-radius: 50%;
-    left: 0;
-    bottom: 0;
-    background-color:white;
-    border: 1px solid #a9a9a9;
+input[type=radio]:checked + .single-selection:before {
+  width: 6px;
+  height: 6px;
+  border: 7px solid #1d7ad9;
 }
-input[type=radio]:checked +.single-selection:before {
-    content: "";
-
-    width: 6px;
-    height: 6px;
-    border: 7px solid #1d7ad9;
+.single-selection:before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  position: absolute;
+  border-radius: 50%;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  border: 1px solid #a9a9a9;
 }
 input[type=text] {
   width: 70px;

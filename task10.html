@@ -21,54 +21,41 @@
     <![endif]-->
 </head>
 <body>
-<div class="container" id="LG">
-    <div class="row header-top">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <div class="logo">
-                <span>客服热线：010-594-78634</span>
-
-                <div class="icon-header">
-                    <div class="icon-header-weixin"><img src="picture/task7-icon-weixin.png"></div>
-                    <div class="icon-header-qq"><img src="picture/task7-icon-qq.png"></div>
-                    <div class="icon-header-weibo"><img src="picture/task7-icon-weibo.png"></div>
-                </div>
+<div class="container-fluid">
+    <div class="header-top container">
+        <div class="logo">
+            <span>客服热线：010-594-78634</span>
+            <div class="icon-header">
+                <div ><a href=""><img src="picture/task7-icon-weixin.png"></a></div>
+                <div><a href=""><img src="picture/task7-icon-qq.png"></a></div>
+                <div ><a href=""><img src="picture/task7-icon-weibo.png"></a></div>
             </div>
-
         </div>
-
     </div>
-
 </div>
-<div class="container-fluid header-footer">
-    <div class="row">
-        <div class="container">
-            <div class="row ">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                            <img src="picture/task7-logo.png">
-                        </div>
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                    data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                                <span class="glyphicon glyphicon-menu-hamburger"></span>
-                            </button>
-                        </div>
-                        <div id="navbar" class="col-lg-6 col-md-6 col-sm-6 collapse navbar-collapse navbar-right"
-                             aria-expanded="false">
-                            <ul class="nav navbar-nav navbar-right text-center">
-                                <li class="white"><a href=""><span>首页</span></a></li>
-                                <li class="green"><a href=""><span>职业</span></a></li>
-                                <li class="green"><a href="task10-2.html"><span>推荐</span></a></li>
-                                <li class="green"><a href=""><span>关于</span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+<div class="header-bottom-wrapper">
+    <div class=" container">
+        <div class="navbar navbar-default header-bottom" role="navigation">
+            <div class="navbar-header">
+                　<!-- .navbar-toggle样式用于toggle收缩的内容，即nav-collapse collapse样式所在元素 -->
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="glyphicon glyphicon-menu-hamburger header-nav"></span>
+                </button>
+                <!-- 确保无论是宽屏还是窄屏，navbar-brand都显示 -->
+                <img src="picture/task7-logo.png">
             </div>
-
+            <!-- 屏幕宽度小于768px时，div.navbar-responsive-collapse容器里的内容都会隐藏，显示icon-bar图标，当点击icon-bar图标时，再展开。屏幕大于768px时，默认显示。 -->
+            <div class="collapse navbar-collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav navbar-right text-center">
+                    <li ><a href="task10.html">首页</a></li>
+                    <li ><a href="">职业</a></li>
+                    <li ><a href="task10-2.html">推荐</a></li>
+                    <li ><a href="">关于</a></li>
+                </ul>
+            </div>
         </div>
     </div>
+
 </div>
 
 <!-- 轮播图 begin -->
@@ -104,29 +91,31 @@
 <!-- 轮播图 end -->
 <div class="container main">
     <div class="row">
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 good">
+        <div class="col-lg-3 col-sm-6 col-xs-12 good">
             <img src="picture/task7-1-rocket.png">
             <h2>高效</h2>
             <p>将五到七年的成长时间，缩短到一年到三年。</p>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 good-2">
+        <div class="col-lg-3 col-sm-6 col-xs-12 good-2">
             <img src="picture/task7-1-book.png">
             <h2>规范</h2>
             <p>标准的实战教程，不会走弯路</p>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 good-3">
+        <div class="col-lg-3 col-sm-6 col-xs-12 good-3">
             <img src="picture/task7-1-correspondence.png" class="img-responsive center-block">
             <h2>人脉</h2>
             <p>同班好友，同院学长，技术大师，入学就混入职脉圈，为以后铺平道路。</p>
         </div>
 
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 main-middle1-right ">
-            <img src="picture/task7-1-people-icon.png">
-            <span>12400</span>
-            <p>累计在线学习人数</p>
-            <img src="picture/task7-1-people-icon.png">
-            <span>12400</span>
-            <p>累计在线学习人数</p>
+        <div class="col-lg-3 col-sm-6 col-xs-12 main-middle1-right ">
+            <div class="main-middle1-right-wrap">
+                <img src="picture/task7-1-people-icon.png">
+                <span>12400</span>
+                <p>累计在线学习人数</p>
+                <img src="picture/task7-1-people-icon.png">
+                <span>12400</span>
+                <p>学院已经找到满意工作</p>
+            </div>
         </div>
     </div>
 </div>
@@ -134,34 +123,34 @@
 <div class="container">
     <h3 class="text-center">如何学习</h3>
     <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 main-middle-1">
+        <div class="col-md-3 col-sm-6 col-xs-12 main-middle-1">
             <span class="circle1">1</span><span class="arrow"></span><p>匹配你现在的个人状况寻找适合自己的岗位</p>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 main-middle-1">
+        <div class=" col-md-3 col-sm-6 col-xs-12 main-middle-1">
             <span class="circle1">2</span><span class="arrow"></span><p>了解职业前景薪金待遇、竞争压力等</p>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 main-middle-1">
+        <div class="col-md-3 col-sm-6 col-xs-12 main-middle-1">
             <span class="circle1">3</span><span class="arrow"></span><p>掌握行业内顶级技能</p>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 main-middle-1">
+        <div class=" col-md-3 col-sm-6 col-xs-12 main-middle-1">
             <span class="circle1">4</span><span class="arrow"></span><p>查看职业目标任务</p>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 main-middle-1">
+        <div class=" col-md-3 col-sm-6 col-xs-12 main-middle-1">
             <span class="circle1">5</span><span class="arrow"></span><p>参考学习资源，掌握技能点，逐个完成任务</p>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 main-middle-1">
+        <div class=" col-md-3 col-sm-6 col-xs-12 main-middle-1">
             <span class="circle1">6</span><span class="arrow"></span><p>加入班级，和小伙伴们互帮互助，一块学习</p>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 main-middle-1">
+        <div class=" col-md-3 col-sm-6 col-xs-12 main-middle-1">
             <span class="circle1">7</span><span class="arrow"></span><p>选择导师，一路引导，加速自己成长</p>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 main-middle-1">
+        <div class=" col-md-3 col-sm-6 col-xs-12 main-middle-1">
             <span class="circle1">8</span><span class="arrow"></span>
             <p>完成职业技能，升级业界大牛</p>
         </div>
     </div>
     <div class="row main-middle-2">
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 main-middle-2">
+        <div class="col-md-3 col-sm-6 col-xs-12 main-middle-2">
             <div class="show">
                 <img class="profile-picture img-responsive center-block" src="picture/task7-1-rentou1.png">
                 <h3 class="text-center">技术顾问：罗大佑</h3>
@@ -169,7 +158,7 @@
             </div>
 
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 main-middle-2">
+        <div class="col-md-3 col-sm-6 col-xs-12 main-middle-2">
             <div class="show">
                 <img class="profile-picture img-responsive center-block" src="picture/task7-1-rentou2.png">
                 <h3 class="text-center">技术顾问：罗大佑</h3>
@@ -177,7 +166,7 @@
             </div>
 
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 main-middle-2">
+        <div class=" col-md-3 col-sm-6 col-xs-12 main-middle-2">
             <div class="show">
                 <img class="profile-picture img-responsive center-block" src="picture/task7-1-rentou3.png">
                 <h3 class="text-center">技术顾问：罗大佑</h3>
@@ -185,7 +174,7 @@
             </div>
 
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 main-middle-2">
+        <div class=" col-md-3 col-sm-6 col-xs-12 main-middle-2">
             <div class="show">
                 <img class="profile-picture img-responsive center-block" src="picture/task7-1-rentou4.png">
                 <h3 class="text-center">技术顾问：罗大佑</h3>
@@ -194,7 +183,7 @@
 
         </div>
         <div class="more">
-            <div class="circle2"></div>
+            <div class="circle2 circle3"></div>
             <div class="circle2"></div>
             <div class="circle2"></div>
             <div class="circle2"></div>
@@ -219,9 +208,9 @@
     <div class="row">
         <div class="container">
             <div class="container">
-                    <h3>友情链接</h3>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                <ul >
+                <h3>友情链接</h3>
+                <div class=" col-xs-12 ">
+                    <ul >
                         <li><a href="">手机软件</a></li>
                         <li><a href="">教师招聘</a></li>
                         <li><a href="">找工作</a></li>
@@ -234,8 +223,8 @@
                         <li><a href="">找工作</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                <ul>
+                <div class="col-xs-12 ">
+                    <ul>
                         <li><a href="">手机软件</a></li>
                         <li><a href="">教师招聘</a></li>
                         <li><a href="">找工作</a></li>
@@ -257,15 +246,15 @@
 <div class="container-fluid footer">
     <div class="row">
         <div class="container">
-            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 footer-middle-left">
+            <div class="col-lg-4 col-sm-5 col-xs-12 footer-middle-left">
                 <p>技能树——改变你我</p>
                 <ul>
                     <li><a href="">关于我们</a>丨</li>
                     <li><a href="">联系我们</a>丨</li>
-                    <li><a href="">合作企业</a></li>
+                    <li><a href="task10-2.html">合作企业</a></li>
                 </ul>
             </div>
-            <div class="col-lg-5 col-md-5 col-sm-4 col-xs-12 footer-middle-middle">
+            <div class="col-lg-3 col-md-5 col-sm-4 col-xs-12 footer-middle-middle">
                 <p>旗下网站</p>
                 <ul>
                     <li><a href="">草船云孵化器</a></li>
@@ -276,9 +265,16 @@
                     <li><a href="">桌游精灵</a></li>
                 </ul>
             </div>
-            <div class="col-lg-2 col-md-2 col-sm-3 footer-middle-right">
-                <p>微信公众平台</p>
-                <img src="picture/task7-footer-weixinma.png">
+            <div class="col-lg-5 col-md-2 col-sm-3 footer-middle-right">
+                <ul>
+                    <li>
+                        微信公众平台
+                    </li>
+                    <li>
+                        <img src="picture/task7-footer-weixinma.png">
+
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -296,3 +292,4 @@
 <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
+

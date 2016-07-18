@@ -1,0 +1,52 @@
+.main{
+    text-align: center;
+}
+h2{
+    position: relative;
+    top: 50px;
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 40px;
+    line-height: 70px;
+    font-weight:bolder;
+    vertical-align: bottom;
+    color: #f56b81;
+    background-color: white;
+    border: 5px solid #ffedc5;
+    border-radius: 50%;
+}
+.main-top{
+    width: 450px;
+    min-height: 500px;
+    margin: 5px auto;
+    background-color: #ffedc5;
+    border: 8px solid white;
+}
+#identity{
+    color: #29bde0;
+    font-size: 4rem;
+    visibility:hidden;
+
+}
+.main-top img{
+    margin-top: 80px;
+}
+.footer{
+    margin-top: 80px;
+    text-align: center;
+    background-color: #29bdf4;
+
+}
+.footer button{
+    width: 450px;
+    background-color: #fbb435;
+    margin: 40px auto;
+    border: 0;
+    color: white;
+    font-size: 4.8rem;
+    padding: 10px;
+
+}

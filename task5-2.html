@@ -8,12 +8,35 @@
             margin: 0;
             padding: 0;
         }
+        @media screen and (max-width: 1920px) {
+            html {
+                font-size: 62.5%;
+            }
+        }
+        @media screen and (max-width: 992px) {
+            html {
+                font-size: 52.5%;
+            }
+        }
+        @media screen and (max-width: 767px) {
+            html {
+                font-size: 42.5%;
+            }
+        }
+        @font-face {
+            font-family: "STHeiti-Light";
+            src: url('font/STHeiti-Light.ttc');
+        }
+        html{
+            font-family: STHeiti-Light;
+        }
+
         img{
             max-width: 100%;
         }
         .wrapper{
             width: 100%;
-            max-width: 640px;
+            max-width: 720px;
             min-width:320px;
             margin: 0 auto;
             position: relative;
@@ -24,31 +47,38 @@
         .header{
             box-sizing: border-box;
             width: 100%;
-            background: #2d94fb;
+            background: #5fc0cd;
             text-align:center;
             padding: 0.5rem;
+            overflow: hidden;
+
         }
         .header img{
-            position: absolute;
-            right: 5.5%;
-            top: 0.5%;
+            float: right;
+            margin-right: 15px;
+            margin-top: 5px;
         }
         .header button{
+            text-align: center;
             border-radius: 5px;
             border: 1px solid #5fc0ce;
-            padding: 0.3em;
+            padding: 7px 10px;
+            margin: 5px 0;
+            position: relative;
+            left: 25px;
         }
 
         .employer{
-            background: white;
-
-            color: #2d94fb;
-            font-size: 150%;
+            background: #55a8b3;
+            border: 0;
+            color: white;
+            font-size: 3.4rem;
         }
         .nurse{
-            background: #67bffb;
-            color: white;
-            font-size: 150%;
+            background: white;
+            color: #5fc0cd;
+            font-size: 3.4rem;
+            border: 0;
         }
         .subnav{
             width: 100%;
@@ -60,7 +90,7 @@
             border: none;
             border-bottom: 1px solid #999999;
             box-sizing: border-box;
-            font-size: 1em;
+            font-size: 2.8rem;
         }
         .drop-place{
             -moz-box-flex:1;
@@ -95,7 +125,7 @@
             line-height: 3em;
         }
         .list{
-            font-size: 1em;
+            font-size: 2.8rem;
             position: relative;
         }
         .list li{
@@ -109,6 +139,7 @@
         }
         .work-time{
             color: #888888;
+            margin-top: 10px;
 
         }
         .price{
@@ -122,71 +153,90 @@
         }
         .price span{
             display: inline-block;
-            vertical-align: -0.4em;
+            vertical-align: 0.2em;
         }
         .price-time{
             width: 60%;
+
         }
         .price-red{
             color: red;
             position: relative;
             left: 10%;
         }
+        @media screen and (max-width: 360px) {
+            .price-red{
+                color: red;
+                position: relative;
+                left: 5%;
+                top: -20px;
+            }
+        }
         .people-place{
-
+            margin-bottom: 10px;
         }
         .people-place span{
             display: inline-block;
             vertical-align: top;
+            color: #bababa;
         }
         .footer{
             position: fixed;
             bottom: 1px;
             width: 100%;
-            max-width: 640px;
+            max-width: 720px;
             background-color: #ffffff;
             text-align: center;
             display: -moz-box;
             display: -webkit-box;
             display: -webkit-flex;
-            display: box;;
+            display: box;
             border-top:1px solid #888888 ;
+            z-index: 3;
+            font-size: 2rem;
+            padding-top: 2px;
+            padding-bottom: 5px;
+        }
+        .footer ul{
+            width: 50%;
+            text-align: center;
         }
         .footer-1 img{
             margin-bottom:0.5em ;
             margin-top: 1em;
         }
+        .footer-1 ul{
+            float: right;
+            text-align: center;
+        }
         .footer-3 img{
             margin-bottom: 0.5em;
             margin-top: 1em;
-        }
-        .footer-1 span{
-            margin-right: 0.3em;
-            color: #2d94fb;
-        }
-        .footer-3 span{
-            margin-left: 0.5em;
-            color: #888888;
         }
         .footer-1{
             -moz-box-flex:1;
             -webkit-box-flex:1;
             -ms-flex:1;
             -webkit-flex:1;
-            text-align: right;
+            color: #5fc0cd;
         }
         .footer-2{
             -moz-box-flex:1;
             -webkit-box-flex:1;
             -ms-flex:1;
             -webkit-flex:1;
+
+        }
+        .footer-2 img{
+            max-width: 70%;
         }
         .footer-3{
             -moz-box-flex:1;
             -webkit-box-flex:1;
             -ms-flex:1;
             -webkit-flex:1;
-            text-align: left;
+            color: #bababa;
+
         }
 
 
@@ -197,8 +247,9 @@
     <div class="header">
         <div class="btn">
             <button class="employer" type="button">找雇主</button><button class="nurse" type="button">找护工</button>
+            <img src="picture/task5-2-didian-icon.png">
+
         </div>
-        <img src="picture/task5-2-didian-icon.png">
     </div>
     <div class="main">
         <div class="subnav">
@@ -223,7 +274,10 @@
                     </div>
                     <div class="price">
                             <span class="price-time">2015-7-5至2015-7-12</span><span class="price-red">25/小时</span>
-                            <img class="see" src="picture/task5-2-forward.png">
+                            <a href="task5.html">
+                                <img class="see" src="picture/task5-2-forward.png">
+                            </a>
+
                     </div>
                     <div class="people-place">
                             <img src="picture/task5-2-didian-small-icon.png">
@@ -236,7 +290,7 @@
                         <span>服务日期</span>
                     </div>
                     <div class="price">
-                        <span class="price-time">2015-7-5至2015-7-12</span><span class="price-red">25/小时</span>
+                        <span class="price-time">2015-7-5至2015-7-12</span><span class="price-red">35/小时</span>
                         <img class="see" src="picture/task5-2-forward.png">
                     </div>
                     <div class="people-place">
@@ -250,7 +304,7 @@
                         <span>服务日期</span>
                     </div>
                     <div class="price">
-                        <span class="price-time">2015-7-5至2015-7-12</span><span class="price-red">25/小时</span>
+                        <span class="price-time">2015-7-5至2015-7-12</span><span class="price-red">45/小时</span>
                         <img class="see" src="picture/task5-2-forward.png">
                     </div>
                     <div class="people-place">
@@ -264,7 +318,7 @@
                         <span>服务日期</span>
                     </div>
                     <div class="price">
-                        <span class="price-time">2015-7-5至2015-7-12</span><span class="price-red">25/小时</span>
+                        <span class="price-time">2015-7-5至2015-7-12</span><span class="price-red">45/小时</span>
                         <img class="see" src="picture/task5-2-forward.png">
                     </div>
                     <div class="people-place">
@@ -294,16 +348,31 @@
     </div>
     <div class="footer">
         <div class="footer-1">
-            <img src="picture/task5-2-footer-home-icon.png"><br/>
-            <span>首页</span>
+            <ul>
+                <li>
+                    <img src="picture/task5-2-footer-home-icon.png">
+
+                </li>
+                <li>
+                    <spanp>首页</spanp>
+
+                </li>
+            </ul>
         </div>
         <div class="footer-2">
-
             <img src="picture/task5-2-write.png">
         </div>
         <div class="footer-3">
-            <img src="picture/task5-2-footer-mine-icon.png"><br/>
-            <span>我的</span>
+            <ul>
+                <li>
+                    <img src="picture/task5-2-footer-mine-icon.png">
+
+                </li>
+                <li>
+                    <span>我的</span>
+
+                </li>
+            </ul>
 
         </div>
 

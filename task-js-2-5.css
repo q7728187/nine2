@@ -1,0 +1,212 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font:normal 100% Arial,sans-serif; font-size:1.4rem;
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 40%;
+    }
+}
+@font-face {
+    font-family: "Hiragino Sans GB W3";
+    src: url('font/Hiragino Sans GB W3.ttf');
+}
+@font-face {
+    font-family: "STHeiti-Light";
+    src: url('font/STHeiti-Light.ttc');
+}
+body{
+    font-family: "Hiragino Sans GB W3";
+}
+
+.img{
+    max-width: 80%;
+}
+.wrapper{
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative;
+    min-width: 320px;
+}
+.header{
+    background-color: #29bdf4;
+    overflow: hidden;
+    text-align: center;
+    font-size: 3rem;
+    padding: 10px;
+    padding-bottom: 5px;
+}
+.header-left{
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.header-right{
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.msg-header{
+    background-color: #b9e9f5;
+    font-size: 2.5rem;
+    padding: 1rem;
+    overflow: hidden;
+}
+.msg-header span{
+    line-height: 40px;
+    margin-left: 30px;
+}
+.msg button{
+    background-color: #fbb435;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    padding-top:0.3rem ;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    border: 1px solid #fbb435;
+    float: right;
+    margin-top: 5px;
+    margin-right: 8px;
+}
+.button-triangle{
+    width: 0;
+    height: 0;
+    margin: 0;
+    border-top: 12px solid transparent;
+    border-right: 14px solid transparent;;
+    border-bottom: 14px solid transparent;
+    border-left: 20px solid white;
+
+}
+.msg-triangle{
+    height: 1rem;
+    background-color: #29bdf4;
+    padding-left: 4rem;
+}
+.triangle{
+    width: 0;
+    height: 0;
+    margin-left: 20px;
+    border-top: 1rem solid #b9e9f5;
+    border-right:1rem solid transparent;;
+    border-bottom: 1rem solid transparent;
+    border-left: 1rem solid transparent;
+}
+.msg-footer{
+    font-size: 2.2rem;
+    background-color: #29bdf4;
+    padding: 5px 0 5px 70px;
+    color: white;
+
+}
+.box{
+    box-sizing: border-box;
+    float: left;
+    width: 24%;
+    margin: 4% 0 2% 7%;
+    text-align: center;
+    overflow: hidden;
+}
+.box-header{
+    border: 3px solid white;
+
+}
+.box:hover .box-bottom {
+    opacity: 1;
+}
+.box-name{
+    padding: 25% 0;
+    font-size: 3rem;
+    background: #f5c97b;
+}
+.box-number{
+    font-size: 2.2rem;
+    color: white;
+    background: #83b09a;
+}
+.box-footer{
+    width: 100%;
+    margin-top: 16%;
+    font-size: 0;
+}
+.main{
+    background-color: #29bdf4;
+    overflow: hidden;
+}
+ul{
+}
+li{
+    display: inline-block;
+    width: 25%;
+    padding: 12.5% 0;
+    opacity: 1;
+    background-image: url(img/mysprite.png);
+    background-repeat: no-repeat;
+    background-size: 400%;
+
+
+}
+.box:hover li {
+}
+.box{
+    float: left;
+}
+.box-dead{
+    background-color: #3c3c3c;
+}
+.kill{
+    background-position: 0 0;
+
+}
+.search{
+    background-position: 34% 0;
+
+}
+.aim{
+    background-position: 67% 0;
+
+}
+.salvation{
+    background-position: 100% 0;
+
+}
+.box-footer ul{
+    visibility: hidden;
+}
+.footer{
+    border: none;
+    border-top: 1px solid #fbfcff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 640px;
+    padding: 0 auto;
+    background-color: #29bdf4;
+    text-align: center;
+}
+.footer button{
+    padding: 5% 30%;
+    margin: 5% auto;
+    font-size: 3rem;
+    color: white;
+    background: #fbb435;
+    border-top: 1px white solid;
+    font-family: STHeiti-Light;
+
+}

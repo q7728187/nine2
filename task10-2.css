@@ -19,13 +19,16 @@
 }
 body{
     background-color: #fafafa;
+    font-family: "Microsoft YaHei";
 }
 h3{
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: bold;
     margin: 30px 0;
-
-
+}
+h3 span{
+    font-weight: bold;
+    font-size: 1.6rem;
 }
 
 .catalog span{
@@ -44,9 +47,10 @@ h3{
 }
 .sidebar{
     background-color: #ffffff;
-    border: 1px solid #ededed;
+    border: 2px solid rgba(225, 225, 225, 0.5);
     border-radius: 5px;
-    box-shadow: #ededed 1px;
+    padding: 20px 1%;
+    min-width: 100px;
 
 }
 .sidebar li{
@@ -54,15 +58,16 @@ h3{
     font-size: 1.4rem;
     line-height: 5rem;
     color: #1ba36e;
+    max-width: 90px;
+    min-width: 90px;
+    margin: 0 auto;
 
 
 }
 .sidebar ul{
     padding-left: 0;
-    margin-left:36%
 }
 .circle{
-
     display: inline-block;
     width: 10px;
     height: 10px;
@@ -78,8 +83,7 @@ h3{
     font-size: 14px;
     line-height: 30px;
     background-color: #fff;
-    border: 1px solid #e6e6e6;
-    box-shadow: 0 2px 1px #ddd;
+    border: 2px solid rgba(225, 225, 225, 0.5);
 }
 .detail p {
     padding: 30px;

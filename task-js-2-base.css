@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@media screen and (max-width: 1920px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+@media screen and (max-width: 992px) {
+    html {
+        font-size: 52.5%;
+    }
+}
+@media screen and (max-width: 767px) {
+    html {
+        font-size: 42.5%;
+    }
+}
+.wrapper{
+    max-width: 640px;
+    margin: 0 auto;
+    background-color: #29bdf4;
+}
+.header{
+    background-color: #29bdf4;
+    height: 60px;
+    font-size: 3.4rem;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+}
+.header-left{
+    float: left;
+    background: url("picture/Back _ Icon.png") no-repeat;
+    height: 41px;
+    width: 41px;
+}
+.header-right{
+    float: right;
+    background: url("picture/task2-js-headerright.png") no-repeat;
+    height: 48px;
+    width: 48px;
+}
+.main{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #29bdf4;
+}
+

@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="task-js-2-5.css">
+    <title>task6-2</title>
+</head>
+<body onload="mymessage()">
+<div class="wrapper">
+    <div class="header">
+        <span>杀人</span>
+        <div class="header-left">
+            <a href=""><img src="picture/task6-2-1.png"></a>
+        </div>
+        <div class="header-right">
+            <a href=""><img src="picture/task6-2-2.png"></a>
+        </div>
+    </div>
+    <div class="msg">
+        <div class="msg-header">
+            <span>杀手请睁眼</span><audio src="music/财富自由.mp3" controls="controls" preload id="music" hidden></audio>
+            <button id="a" type="button" onclick="a();">
+                <div class="button-triangle"></div>
+            </button>
+            <script>
+                function a() {
+                    var audio = document.getElementById('music');
+                    if (audio.paused) {
+                        audio.play();//audio.play();// 播放
+                    }
+                    else {
+                        audio.pause();// 暂停
+                    }
+                }
+            </script>
+        </div>
+        <div class="msg-triangle">
+            <div class="triangle"></div>
+        </div>
+        <div class="msg-footer">
+            <span>点击下方头像</span>
+        </div>
+    </div>
+    <div class="main">
+        <div class="box" id="box1" onclick="boxfootstyle(this.id)">
+            <div class="box-header">
+                <div class="box-name">
+                    <span>水民</span>
+                </div>
+                <div class="box-number">
+                    <span>1号</span>
+                </div>
+            </div>
+            <div class="box-footer">
+                <ul>
+                    <li class="kill" onclick="killhuman(this)"></li>
+                    <li class="search"></li>
+                    <li class="aim"></li>
+                    <li class="salvation"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <button type="button" class="assign"><span>确定</span></button>
+    </div>
+
+</div>
+<script src="task-js-2-5.js"></script>
+</body>
+</html>

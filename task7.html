@@ -10,36 +10,48 @@
 <body>
 <div class="header">
     <div class="header-top">
-        <span>客服热线：010-594-78634</span>
-        <div class="icon-header">
+        <div class="header-footer-wrap">
+            <span>客服热线：010-594-78634</span>
+            <div class="icon-header">
                 <div class="icon-header-weixin"><img src="picture/task7-icon-weixin.png"> </div>
                 <div class="icon-header-qq"><img src="picture/task7-icon-qq.png"></div>
                 <div class="icon-header-weibo"><img src="picture/task7-icon-weibo.png"></div>
+            </div>
         </div>
     </div>
     <div class="header-footer">
+        <div class="header-footer-wrap">
             <div class="logo">
                 <img src="picture/task7-logo.png">
             </div>
             <ul class="top-nav">
-                <li><span>首页</span></li>
-                <li><span>职业</span></li>
+                <li><a href="task7.html"><span>首页</span></a></li>
+                <li><a href="task8.html"><span>职业</span></a></li>
                 <li><span>推荐</span></li>
                 <li><span>关于</span></li>
             </ul>
+        </div>
+
     </div>
 </div>
 <div class="scroll">
-    <div class="carousel">
-        <div class="banner"><img src="picture/banner-1.jpg"></div>
-        <div class="banner"><img src="picture/banner-2.jpg"></div>
-        <div class="banner"><img src="picture/banner-3.jpg"></div>
-        <div class="banner"><img src="picture/banner-4.jpg"></div>
+    <div class="carousel" style="left: 0%; width: 400%;">
+        <div class="banner" style="width: 25%"><img src="picture/banner-1.jpg"></div>
+        <div class="banner" style="width: 25%"><img src="picture/banner-2.jpg"></div>
+        <div class="banner" style="width: 25%"><img src="picture/banner-3.jpg"></div>
+        <div class="banner" style="width: 25%"><img src="picture/banner-4.jpg"></div>
     </div>
     <div class="button">
         <div class="pre"></div>
-        <div class="next"></div>
+        <div class="next" ></div>
     </div>
+    <ul class="carousel-bottom">
+        <li id="carousel-bottom1"></li>
+        <li id="carousel-bottom2"></li>
+        <li id="carousel-bottom3"></li>
+        <li id="carousel-bottom4"></li>
+
+    </ul>
 </div>
 <div class="main">
     <div class="main-top">
@@ -65,7 +77,7 @@
             <p>累计在线学习人数</p>
             <img src="picture/task7-1-people-icon.png">
             <span>12400</span>
-            <p>累计在线学习人数</p>
+            <p>学员已经找到满意工作</p>
         </div>
 
     </div>
@@ -123,7 +135,7 @@
             </li>
         </ul>
         <div class="more">
-            <div class="circle2"></div>
+            <div class="circle2 circle3"></div>
             <div class="circle2"></div>
             <div class="circle2"></div>
             <div class="circle2"></div>
@@ -171,38 +183,42 @@
 </div>
 
 <div class="footer">
-    <div class="footer-middle-left">
-        <p>技能树——改变你我</p>
-        <ul>
-            <li>关于我们丨</li>
-            <li>联系我们丨</li>
-            <li>合作企业</li>
-        </ul>
+    <div class="header-footer-wrap">
+        <div class="footer-middle-left">
+            <p>技能树——改变你我</p>
+            <ul>
+                <li><a href=""> 关于我们丨</a></li>
+                <li><a href=""> 联系我们丨</a></li>
+                <li><a href="task7-2.html">合作企业</a></li>
+            </ul>
+        </div>
+        <div class="footer-middle-middle">
+            <p>旗下网站</p>
+            <ul>
+                <li><a href="">草船云孵化器</a></li>
+                <li><a href=""> 最强IT特训营</a></li>
+            </ul>
+            <ul>
+                <li><a href=""> 葡萄藤轻游戏</a></li>
+                <li><a href=""> 桌游精灵</a></li>
+            </ul>
+        </div>
+        <div class="footer-middle-right">
+            <p>微信公众平台</p>
+            <img src="picture/task7-footer-weixinma.png">
+        </div>
     </div>
-    <div class="footer-middle-middle">
-        <p>旗下网站</p>
-        <ul>
-            <li>草船云孵化器</li>
-            <li>最强IT特训营</li>
-        </ul>
-        <ul>
-            <li>葡萄藤轻游戏</li>
-            <li>桌游精灵</li>
-        </ul>
-    </div>
-    <div class="footer-middle-right">
-        <p>微信公众平台</p>
-        <img src="picture/task7-footer-weixinma.png">
-    </div>
+
 </div>
 <div class="copyright">
     <span>Copyright © 2015技能树 www.jnshu.com All Rights Reserved | 京ICP备13005880号</span>
 </div>
 <script>
     (function () {
-        var carousel = document.querySelector(".carousel");
-        var img = carousel.querySelectorAll("div");
-        var len = img.length;
+        var carousel = document.querySelector(".carousel");//名为.carousel第一个元素
+        var img = carousel.querySelectorAll("div");//carousel下所有div集合
+        var len = img.length;//图片数量
+        //遍历图片数组
         [].forEach.call(img, function (item) {
             item.style.width = (100 / len) + "%";
         });
@@ -214,25 +230,48 @@
         next.onclick = function () {
             var left = carousel.style.left;
             if (i < len - 1) {
-                carousel.style.left = (parseInt(left) - 100) + "%";
+                carousel.style.left = (parseInt(left) - 100) + "%";//整个滚动块往右移动
+                document.getElementById("carousel-bottom"+(Math.abs(parseInt(left)/100)+2)).style.backgroundColor="white";
+                document.getElementById("carousel-bottom"+(Math.abs(parseInt(left)/100)+1)).style.backgroundColor="transparent";
                 i++;
             }
             else if (i == len - 1) {
                 carousel.style.left = "0%";
+                document.getElementById("carousel-bottom1").style.backgroundColor="white";
+                document.getElementById("carousel-bottom4").style.backgroundColor="transparent";
                 i = 0;
             }
+
         };
         pre.onclick = function () {
-            var left = carousel.style.left;
+            var left = carousel.style.left;//left="-%"
             if (i > 0) {
-                carousel.style.left = (parseInt(left) + 100) + "%";
+                carousel.style.left = (parseInt(left) + 100) + "%";//百分比转换数字
+                document.getElementById("carousel-bottom"+Math.abs(parseInt(left)/100)).style.backgroundColor="white";
+
+                document.getElementById("carousel-bottom"+(Math.abs(parseInt(left)/100)+1)).style.backgroundColor="transparent";
+
+
                 i--;
             } else if (i == 0) {
                 carousel.style.left = -parseInt(carousel.style.width) + 100 + "%";
+                document.getElementById("carousel-bottom4").style.backgroundColor="white";
+                document.getElementById("carousel-bottom1").style.backgroundColor="transparent";
                 i = len - 1;
             }
         };
     }());
+    var x=0;
+    function scrollNext() {
+        var x=0;
+        if (x<=3){
+            x++;
+        }
+        else{
+            x=1
+        }
+        document.getElementById("carousel-bottom"+x).style.backgroundColor="white";
+    }
 </script>
 
 

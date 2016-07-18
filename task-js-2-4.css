@@ -1,0 +1,80 @@
+div{
+    box-sizing: border-box;
+}
+.main{
+    background-color: #29bdf4;
+    min-height: 600px;
+}
+.day{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    font-size: 34px;
+    color: #29bdf4;
+    text-align: center;
+}
+.day-header{
+    background-color: white;
+    min-height: 50px;
+    line-height: 50px;
+    font-weight: bolder;
+    border-bottom: 2px solid #999;
+
+}
+.day-header>img{
+    margin-top: 30px;
+    float: right;
+}
+
+.day-footer{
+    overflow: hidden;
+    background-color: white;
+    display: none;
+}
+.day-footer ul{
+    position: relative;
+    margin-bottom: 50px;
+
+}
+.day-footer img{
+    position: absolute;
+    left: -30px;
+    top: 20px;
+}
+li>p{
+    display: inline-block;
+
+}
+li>p:first-of-type{
+    position: relative;
+    border: 10px solid transparent;
+    border-right:10px solid #24a7c6 ;
+}
+li>p:last-of-type{
+     margin: 20px auto;
+    width: 70%;
+    padding: 2%;
+    background-color: #24a7c6;
+        text-align: center;
+        color: white;
+
+}
+
+.day-footer-left{
+    float: left;
+    width: 10%;
+    min-height: 50px;
+    height: 100%;
+}
+.day-footer-right{
+    float: right;
+    width: 90%;
+    height: 100%;
+    border-left: 1px solid #999 ;
+
+}
+.day-footer-right li {
+    background-color: white;
+    list-style: none;
+    overflow: hidden;
+}

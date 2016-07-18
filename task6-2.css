@@ -8,7 +8,7 @@ html{
     font-size: 62.5%;
 }
 body{
-    font:normal 100% Arial,sans-serif;font-size:14px; font-size:1.4rem;
+    font:normal 100% Arial,sans-serif; font-size:1.4rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -22,7 +22,17 @@ body{
         font-size: 40%;
     }
 }
-
+@font-face {
+    font-family: "Hiragino Sans GB W3";
+    src: url('font/Hiragino Sans GB W3.ttf');
+}
+@font-face {
+    font-family: "STHeiti-Light";
+    src: url('font/STHeiti-Light.ttc');
+}
+body{
+    font-family: "Hiragino Sans GB W3";
+}
 
 .img{
     max-width: 80%;
@@ -35,7 +45,7 @@ body{
     min-width: 320px;
 }
 .header{
-    background-color: #2d94fb;
+    background-color: #29bdf4;
     overflow: hidden;
     text-align: center;
     font-size: 3rem;
@@ -43,54 +53,65 @@ body{
 }
 .header-left{
     float: left;
+    margin-left: 10px;
 }
 .header-right{
     float: right;
+    margin-right: 10px;
 }
 .msg-header{
-    background-color: #5fc0ce;
+    background-color: #b9e9f5;
     font-size: 2.5rem;
     padding: 1rem;
     overflow: hidden;
 }
+.msg-header span{
+    line-height: 40px;
+    margin-left: 30px;
+}
 .msg button{
-    background-color: #F34703;
+    background-color: #fbb435;
     border-radius: 50%;
     width: 3rem;
     height: 3rem;
-    padding-top:0.2rem ;
+    padding-top:0.3rem ;
     padding-bottom: 0.5rem;
     padding-left: 1rem;
-    border: 1px solid orangered;
+    border: 1px solid #fbb435;
     float: right;
+    margin-top: 5px;
+    margin-right: 8px;
 }
 .button-triangle{
     width: 0;
     height: 0;
     margin: 0;
-    border-top: 1.3rem solid transparent;
-    border-right:1rem solid transparent;;
-    border-bottom: 1.3rem solid transparent;
-    border-left: 1.7rem solid white;
+    border-top: 12px solid transparent;
+    border-right: 14px solid transparent;;
+    border-bottom: 14px solid transparent;
+    border-left: 20px solid white;
 
 }
 .msg-triangle{
     height: 1rem;
-    background-color: #2d94fb;
+    background-color: #29bdf4;
     padding-left: 4rem;
 }
 .triangle{
     width: 0;
     height: 0;
-    border-top: 1rem solid #5fc0ce;
+    margin-left: 20px;
+    border-top: 1rem solid #b9e9f5;
     border-right:1rem solid transparent;;
     border-bottom: 1rem solid transparent;
     border-left: 1rem solid transparent;
 }
 .msg-footer{
     font-size: 2.2rem;
-    background-color: #2d94fb;
-    padding-left: 4.5rem;
+    background-color: #29bdf4;
+    padding: 5px 0 5px 70px;
+    color: white;
+
 }
 .box{
     box-sizing: border-box;
@@ -117,24 +138,21 @@ body{
 }
 .box-footer{
     width: 100%;
-    margin-top: 5%;
-    opacity: 0;
+    margin-top: 16%;
     font-size: 0;
 }
 .main{
-    background-color: #2d94fb;
+    background-color: #29bdf4;
     overflow: hidden;
 }
 ul{
-    overflow: hidden;
 }
 li{
     display: inline-block;
     background-repeat:no-repeat ;
-    width: 20%;
-    padding: 12.5% 1%;
+    width: 25%;
+    padding: 12.5% 0;
     list-style: none;
-    background-size: 80%;
 
 
 }
@@ -142,29 +160,29 @@ li{
     float: left;
 }
 .kill{
-    background-image:url(picture/task6-2-s-1.png) ;/** sprite-ref: mysprite;sprite-margin-bottom：5px; */
+    background-image:url(picture/task6-2-s-1.png) ;/** sprite-ref: mysprite; */
 }
 .search{
-    background-image:url(picture/task6-2-s-2.png) ;/** sprite-ref: mysprite;sprite-margin-bottom：5px; */
+    background-image:url(picture/task6-2-s-2.png) ;/** sprite-ref: mysprite; */
 }
 .aim{
-    background-image:url(picture/task6-2-s-3.png) ;/** sprite-ref: mysprite;sprite-margin-bottom：5px; */
+    background-image:url(picture/task6-2-s-3.png) ;/** sprite-ref: mysprite;*/
 }
 .salvation{
-    background-image:url(picture/task6-2-s-4.png) ;/** sprite-ref: mysprite;sprite-margin-bottom：5px; */
+    background-image:url(picture/task6-2-s-4.png) ;/** sprite-ref: mysprite;*/
 }
 .box:hover .box-footer{
     opacity: 1;
 }
 .footer{
     border: none;
-    border-top: 1px solid #888888;
+    border-top: 1px solid #fbfcff;
     position: fixed;
     bottom: 0;
     width: 100%;
     max-width: 640px;
     padding: 0 auto;
-    background-color: #2d94fb;
+    background-color: #29bdf4;
     text-align: center;
 }
 .footer button{
@@ -174,4 +192,6 @@ li{
     color: white;
     background: #fbb435;
     border-top: 1px white solid;
+    font-family: STHeiti-Light;
+
 }

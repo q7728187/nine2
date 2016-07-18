@@ -1,0 +1,31 @@
+.main-top img{
+    display: block;
+    margin: 50px auto;
+}
+.main-footer{
+    min-height: 400px;
+}
+li{
+    list-style: none;
+    font-size: 24px;
+    text-align: center;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #29bdf4;
+    max-width: 640px;
+    text-align: center;
+}
+.footer button{
+    width: 450px;
+    background-color: #fbb435;
+    margin: 40px auto;
+    border: 0;
+    color: white;
+    font-size: 4.8rem;
+    padding: 10px;
+
+}

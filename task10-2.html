@@ -21,60 +21,45 @@
     <![endif]-->
 </head>
 <body>
-<div class="container" id="LG">
-    <div class="row header-top">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <div class="logo">
-                <span>客服热线：010-594-78634</span>
-
-                <div class="icon-header">
-                    <div class="icon-header-weixin"><img src="picture/task7-icon-weixin.png"></div>
-                    <div class="icon-header-qq"><img src="picture/task7-icon-qq.png"></div>
-                    <div class="icon-header-weibo"><img src="picture/task7-icon-weibo.png"></div>
-                </div>
+<div class="container-fluid">
+    <div class="header-top container">
+        <div class="logo">
+            <span>客服热线：010-594-78634</span>
+            <div class="icon-header">
+                <div ><a href=""><img src="picture/task7-icon-weixin.png"></a></div>
+                <div><a href=""><img src="picture/task7-icon-qq.png"></a></div>
+                <div ><a href=""><img src="picture/task7-icon-weibo.png"></a></div>
             </div>
-
         </div>
-
     </div>
-
 </div>
-<div class="container-fluid header-footer">
-    <div class="row">
-        <div class="container">
-            <div class="row ">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                            <img src="picture/task7-logo.png">
-                        </div>
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                    data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                                <span class="glyphicon glyphicon-menu-hamburger"></span>
-                            </button>
-                        </div>
-                        <div id="navbar" class="col-lg-6 col-md-6 col-sm-6 collapse navbar-collapse navbar-right"
-                             aria-expanded="false">
-                            <ul class="nav navbar-nav navbar-right text-center">
-                                <li class="white"><a href=""><span>首页</span></a></li>
-                                <li class="green"><a href="../task11/task11.html"><span>职业</span></a></li>
-                                <li class="green"><a href="task10-2.html"><span>推荐</span></a></li>
-                                <li class="green"><a href=""><span>关于</span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+<div class="header-bottom-wrapper">
+    <div class=" container">
+        <div class="navbar navbar-default header-bottom" role="navigation">
+            <div class="navbar-header">
+                　<!-- .navbar-toggle样式用于toggle收缩的内容，即nav-collapse collapse样式所在元素 -->
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="glyphicon glyphicon-menu-hamburger header-nav"></span>
+                </button>
+                <!-- 确保无论是宽屏还是窄屏，navbar-brand都显示 -->
+                <img src="picture/task7-logo.png">
             </div>
-
+            <!-- 屏幕宽度小于768px时，div.navbar-responsive-collapse容器里的内容都会隐藏，显示icon-bar图标，当点击icon-bar图标时，再展开。屏幕大于768px时，默认显示。 -->
+            <div class="collapse navbar-collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav navbar-right text-center">
+                    <li ><a href="task10.html">首页</a></li>
+                    <li ><a href="">职业</a></li>
+                    <li ><a href="task10-2.html">推荐</a></li>
+                    <li ><a href="">关于</a></li>
+                </ul>
+            </div>
         </div>
     </div>
+
 </div>
 <div class="container-fluid banner">
     <div class="row">
             <img src="picture/task7-2-banner.png">
-
-
     </div>
 </div>
 <div class="container">
@@ -86,7 +71,6 @@
     <div class="row">
         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 sidebar">
             <h2 id="sidebar-h2">合作企业</h2>
-
             <ul>
                 <li>
                     <span class="circle"></span>阿里巴巴
@@ -162,15 +146,15 @@
 <div class="container-fluid footer">
     <div class="row">
         <div class="container">
-            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 footer-middle-left">
+            <div class="col-lg-4 col-md-5 col-sm-5 col-xs-12 footer-middle-left">
                 <p>技能树——改变你我</p>
                 <ul>
                     <li><a href="">关于我们</a>丨</li>
                     <li><a href="">联系我们</a>丨</li>
-                    <li><a href="">合作企业</a></li>
+                    <li><a href="task10-2.html">合作企业</a></li>
                 </ul>
             </div>
-            <div class="col-lg-5 col-md-5 col-sm-4 col-xs-12 footer-middle-middle">
+            <div class="col-lg-3 col-md-5 col-sm-4 col-xs-12 footer-middle-middle">
                 <p>旗下网站</p>
                 <ul>
                     <li><a href="">草船云孵化器</a></li>
@@ -181,14 +165,21 @@
                     <li><a href="">桌游精灵</a></li>
                 </ul>
             </div>
-            <div class="col-lg-2 col-md-2 col-sm-3 footer-middle-right">
-                <p>微信公众平台</p>
-                <img src="picture/task7-footer-weixinma.png">
+            <div class="col-lg-5 col-md-2 col-sm-3 footer-middle-right">
+                <ul>
+                    <li>
+                        微信公众平台
+                    </li>
+                    <li>
+                        <img src="picture/task7-footer-weixinma.png">
+
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
 </div>
-<div class="container-fluid copyright">
+    <div class="container-fluid copyright">
     <div class="row">
         <div class="container">
             <span>Copyright © 2015技能树 www.jnshu.com All Rights Reserved | 京ICP备13005880号</span>

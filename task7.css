@@ -5,7 +5,6 @@
 }
 
 html {
-    font-size: 62.5%;
     font-family: 微软雅黑, serif;
     font-weight: normal;
 }
@@ -15,6 +14,10 @@ ul{
 body{
    width: 100%;
 }
+a{
+    color: white;
+    text-decoration: none;
+}
 .header {
     width: 100%;
     margin:0 auto;
@@ -23,11 +26,11 @@ body{
     box-sizing: border-box;
     width: 100%;
     margin: 0 auto;
-    padding: 0 18.75%;
+    height: 52px;
 }
 .header-top span {
-    font-size: 1.4rem;
-    line-height: 4rem;
+    font-size: 14px;
+    line-height: 52px;
     color:#1db176;
 }
 .icon-header {
@@ -54,13 +57,17 @@ body{
     height: 24px;
     margin-right: 12px;
 }
+.header-footer-wrap{
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
 .logo{
     float: left;
-    margin-left: 18.75%;
     padding-top: 20px;
  }
 .header-footer {
-    height:100px;
+    height:101px;
     background: #1db176;
 }
 .header-footer.logo {
@@ -70,27 +77,39 @@ body{
 }
 .header-footer .top-nav {
     float:right;
-    margin-right: -120px;
     font-size: 16px;
-
 }
 .header-footer ul li {
     display: inline-block;
+    box-sizing: border-box;
     padding: 39px 25px;
     color: white;
     text-align: center;
+}
+.header-footer li:hover{
+    border-bottom: 5px solid white;
+}
+.header-footer-li{
+    border-bottom: 4px solid white;
 
+}
+.header-footer-123{
+    border-bottom: 4px solid white;
+
+}
+.header a{
+    color: white;
+    font-size:16px;
+    text-decoration: none;
 }
 .footer{
     background-color: #1db176;
     height: 200px;
-    padding-right: 18.75%;
-    padding-left: 18.75%;
     color: white;
 }
 .footer-middle-left{
     float: left;
-    width: 200px;
+    width: 240px;
     height: 100%;
     margin-right: 80px;
 
@@ -124,11 +143,16 @@ body{
 
 .footer-middle-left ul li{
     display: inline-block;
+    line-height: 10px;
 }
 .footer-middle-middle{
     float: left;
     width: 280px;
     height: 100%;
+    margin-left: 100px;
+}
+.footer-middle-middle a{
+
 }
 .footer-middle-middle p{
     font-size: 16px;
@@ -158,4 +182,12 @@ body{
     font-size: 12px;
     line-height: 30px;
     border-top: 1px solid #32c086;
+}
+.footer-middle-left a{
+    color: white;
+    text-decoration: none;
+}
+.footer li:hover a{
+    color: #1d7ad9;
+    text-decoration: underline;
 }

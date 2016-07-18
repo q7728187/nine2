@@ -2,16 +2,39 @@
     padding: 0;
     margin: 0;
 }
+@media screen and (max-width: 1920px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+@media screen and (max-width: 992px) {
+    html {
+        font-size: 52.5%;
+    }
+}
+@media screen and (max-width: 767px) {
+    html {
+        font-size: 42.5%;
+    }
+}
+@font-face {
+    font-family: "Hiragino Sans GB W3";
+    src: url('font/Hiragino Sans GB W3.ttf');
+}
 img{
     max-width: 100%;
 }
+body{
+    font-family: "Hiragino Sans GB W3";
+}
+
 .wrap{
     width: 100%;
     max-width: 640px;
     margin: 0 auto;
 }
 .header{
-    background-color: #36bac0;
+    background-color: #29bdf4;
     height: 80px;
 }
 .header img {
@@ -19,16 +42,20 @@ img{
     margin-left: 20px;
 }
 .container{
-    padding: 1em;
-    background-color: #999999;
+    padding: 30px 30px 5em 30px;
+    background-color: #f0f0f0;
+
 }
 .main-header{
-    font-size: 2rem;
+    font-size: 3.4rem;
     line-height: 2em;
     background-color: white;
     text-align: center;
     overflow: hidden;
     padding: 0.5em;
+    border: 2px solid rgba(225, 225, 225, 0.8);
+    color: #9a9a9a;
+
 }
 
 .main-header img{
@@ -36,15 +63,18 @@ img{
     margin-top: 0.3em;
 }
 .main-main{
-    margin-top: 1em;
+    margin-top: 30px;
     background-color: white;
     position: relative;
+    border: 2px solid rgba(225, 225, 225, 0.8);
+    padding-bottom: 5px;
+
 }
 .name{
     border:none;
-    border-bottom: 1px solid #ffff00;
-    font-size: 2em;
-    color: orange;
+    border-bottom: 1px solid #fbb435;
+    font-size: 3.7rem;
+    color: #fbb435;
     text-align: center;
     padding: 0.6em;
 }
@@ -52,20 +82,23 @@ img{
     text-align: center;
 }
 .btn button{
-    font-size: 2.5em;
+    font-size: 3.2rem;
     width: 80%;
     margin: 5%;
     padding: 5%;
-    background-color: #36bac0;
+    background-color: #69d1e9;
+    border: 0;
+    color: white;
 }
 .btn span{
-    font-size: 1.3em;
+    font-size: 2.6rem;
+    color: #787878;
 }
 .main-footer{
     overflow: hidden;
     height: 2em;
-    margin: 0 auto;
-    width: 7em;
+    margin: 10px auto;
+    width: 8em;
 }
 .round-icon{
     width: 1em;
@@ -82,7 +115,7 @@ img{
     float: left;
     border: 1px solid #888888;
     margin: 0.3em;
-    background-color: #2d94fb;
+    background-color: #69d1e9;
 }
 .main-main img{
     position: absolute;

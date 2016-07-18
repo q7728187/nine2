@@ -1,155 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>task4</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="content-type" content="text/html:charset=utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="task4.css">
+    <title>task4-登录界面</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
-            font-family: 微软雅黑;
         }
-        body{
-            background-color:#eff0f4;
+        @media screen and (max-width: 1100px) {
+            html {
+                font-size: 62.5%;
+            }
+        }
+        @media screen and (max-width: 992px) {
+            html {
+                font-size: 52.5%;
+            }
+        }
+        @media screen and (max-width: 767px) {
+            html {
+                font-size: 42.5%;
+            }
+        }
+        @font-face {
+            font-family: "STHeiti-Light";
+            src: url('font/STHeiti-Light.ttc');
         }
 
-        .header{
-            padding-top: 2vh;
-            padding-bottom: 1vh;
-            background-color: #2d94fb;
+        body {
+            font-family: STHeiti-Light,Microsoft YaHei, serif;
+            min-width: 320px;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .wrap {
             width: 100%;
+            background: #eff0f4;
+        }
+
+        .header {
             text-align: center;
-            clear: both;
-            height: 6vh;
-            font-size: 3vh;
-            clear: both;
-        }
-        #header1 {
-            float: left;
-            width: 33%;
-            text-align: left;
-            padding-left: 10px;
-        }
-        #header3{
-            float: right;
-            width:33%;
-            text-align: right;
-            padding-right: 10px;
-        }
-        img{
-            width: 46px;
-            height: 46px;
-            display: block;
-            margin: 0 auto;
-        }
-        .both{
-            width: 100%;
-            padding-top: 3vh;
-            padding-bottom: 0;
-            padding-left: 0;
-            padding-right: 0;
-        }
-        form{
-            width:100%;
-            font-size: 20px;
-        }
-        .form-content input{
-            border-bottom-style: none;
-            border-top-style:none ;
-            border-left:solid #eff0f4 4px;
-            border-right-style: none;
-            font-size: 10px;
-        }
-        .footer{
-            text-align: right;
-            width: 100%;
-            font-size: 15px;
-            padding-top: 20px;
-        }
-        .form-picture{
-            width:10%;
-            float: left;
-        }
-        .form-content{
-            width: 90%;
-            float: right;
+            color: white;
+            background: #5ac0ce;
 
         }
-        .input-tel-password{
-            box-sizing: border-box;
-            padding-left: 2em;
-            padding-top: 2em;
-            padding-bottom: 2em;
-            width: 100%;
-            height: 20px;
+
+        form ul {
+            margin-bottom: 60px;
+        }
+
+        form ul li {
+            margin-top: 1.5rem;
+            padding: 2% 0;
+            background: #fff;
+        }
+
+        label {
+            display: inline-block;
+            width: 5%;
+            padding: 0 2%;
+            text-align: center;
             vertical-align: middle;
         }
-        .form-tel{
-                width: 100%;
-                height: 46px;
-                background-color:white;
-                padding-top: 8px;
-                padding-bottom: 8px;
-          }
-        .form-password{
-            margin-top: 2vh;
-            width: 100%;
-            height: 46px;
-            background-color: white;
-            padding-top: 8px;
-            padding-bottom: 8px;
 
-
+        input {
+            width: 87%;
+            font-size: 3.2rem;
+            text-indent: 2rem;
+            vertical-align: middle;
+            border: none;
+            border-left: 1px solid #eaedee;
         }
-        .submit{
-            margin-top: 5vh;
-            background-color: #2d94fb;
+
+        button {
+            width: 100%;
+            border: none;
+            font-size: 3.6rem;
+            padding: 1.5rem;
+            color: #fff;
+            background: #5fc0ce;
+            font-family: Microsoft YaHei, serif;
+        }
+
+        button span {
+            letter-spacing: 1.5rem;
+        }
+
+        .header {
+            overflow: hidden;
+            padding: 1rem 0;
             text-align: center;
-            width: 100%;
-            height: 8.5vh;
-            font-size: 3.5vh;
-        }
-        .submit1{
-            padding-top: 4vh;
-        }
-        .footer input{
-            border-style:none;
+            font-size: 3.6rem;
+            line-height: 3.6rem;
+            font-weight: normal;
         }
 
+        .header-right {
+            box-sizing: border-box;
+            float: right;
+            width: 33%;
+            font-size: 3.2rem;
+            text-align: right;
+            padding-right: 15px;
+        }
+        .header-left{
+            box-sizing: border-box;
+            float: left;
+            width: 33%;
+            font-size: 3.2rem;
+            text-align: left;
+            padding-left: 20px;
+
+        }
+        .forget-password{
+            text-align: right;
+            color: #5fc0ce;
+            font-size: 3.2rem;
+            padding: 1rem;
+        }
+        button span{
+            position: relative;
+            right: -10px;
+        }
     </style>
 </head>
 <body>
-<div class="header">
-    <div id="header1">关闭</div>
-    登录
-    <div id="header3">注册</div>
-</div>
-<div class="both">
-        <form>
-        <div class="form-tel">
-            <div class="form-picture">
-                <img src="picture/phonetb.png">
-            </div>
-            <div class="form-content">
-                <input type="tel" class="input-tel-password" name="tel" placeholder="输入手机号码">
-            </div>
+<div class="wrap">
+    <div class="header">
+
+        <div class="header-left">
+            <span>
+                关闭
+            </span>
         </div>
-        <div class="form-password">
-            <div class="form-picture">
-                <img src="picture/lock.png">
-            </div>
-            <div class="form-content">
-                <input type="password" class="input-tel-password" placeholder="输入登录密码">
-            </div>
+        登录
+        <div class="header-right">
+            <span>
+                注册
+            </span>
         </div>
-        <div class="submit1">
-            <input type="submit" class="submit" value="登录">
-        </div>
-        </form>
-</div>
-<div class="footer">
-        <span >忘记密码？</span>
+    </div>
+    <form>
+        <ul class="list">
+            <li>
+                <label for="username"> <img class="account" src="picture/phonetb.png"></label>
+                <input type="text" name="user" id="username" value="" placeholder="请输入手机号" maxlength="11">
+            </li>
+            <li>
+                <label for="password"> <img class="password" src="picture/lock.png"></label>
+                <input type="password" name="pass" id="password" value="" placeholder="请输入密码" min="8" maxlength="16">
+            </li>
+        </ul>
+        <button type="submit"><span>登录</span></button>
+    </form>
+<p class="forget-password">
+    忘记密码？
+</p>
 </div>
 </body>
 </html>
