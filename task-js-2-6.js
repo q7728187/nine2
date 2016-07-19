@@ -37,7 +37,7 @@ function mymessage() {
     var textul=document.getElementById("ultext");
     textul.appendChild(para);
     var text=document.createTextNode("123");
-    para.appendChild(text)
+    para.appendChild(text);
 
 
 
